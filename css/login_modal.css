@@ -1,8 +1,12 @@
 
 .login-modal a, a:hover, a:focus {
-	color: #de615e;
+	color: #f05f40;
 	text-decoration: none;
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+.login-modal .btn{
+	background: #f05f40;
 }
 
 h3 {
@@ -14,8 +18,8 @@ h3 {
 
 img { max-width: 100%; }
 
-::-moz-selection { background: #de615e; color: #fff; text-shadow: none; }
-::selection { background: #de615e; color: #fff; text-shadow: none; }
+::-moz-selection { background: #f05f40; color: #fff; text-shadow: none; }
+::selection { background: #f05f40; color: #fff; text-shadow: none; }
 
 /***** Form content *****/
 .login-modal .form-box {
@@ -26,7 +30,7 @@ img { max-width: 100%; }
 	overflow: hidden;
 	padding: 0 25px 15px 25px;
 	background: #444;
-	background: rgba(0, 0, 0, 0.85);
+	background: rgba(0, 0, 0, 0.95);
 	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
 	text-align: left;
 }
@@ -54,7 +58,7 @@ img { max-width: 100%; }
 .login-modal .form-bottom {
 	padding: 25px 25px 30px 25px;
 	background: #444;
-	background: rgba(0, 0, 0, 0.85);
+	background: rgba(0, 0, 0, 0.95);
 	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
 	text-align: left;
 }
@@ -68,7 +72,7 @@ img { max-width: 100%; }
 }
 
 .login-modal .form-bottom form .input-error {
-	border-color: #de615e;
+	border-color: #f05f40;
 }
 
 .social-login {

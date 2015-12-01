@@ -27,7 +27,11 @@
 
     <!-- Login Modal Css -->
     <link rel="stylesheet" href="css/form-elements.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login_modal.css">
+
+    <!-- Calender Modal Css -->
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
+    <link rel="stylesheet" href="css/calendar_modal.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,6 +60,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a data-toggle="modal" href="#event-cal-modal">Events</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
@@ -308,6 +315,36 @@
         </div>
     </div>
 
+    <!-- Calender Modal-->
+
+    <div id="event-cal-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- modal content -->
+            <div class="calendar-container">
+                <div class="calendar">
+                    <header>
+                        <h2 class="month"></h2>
+                        <a class="btn-prev fontawesome-angle-left" href="#"></a>
+                        <a class="btn-next fontawesome-angle-right" href="#"></a>
+                    </header>
+                    <table>
+                        <thead class="event-days">
+                        <tr></tr>
+                        </thead>
+                        <tbody class="event-calendar">
+                        <tr class="1"></tr>
+                        <tr class="2"></tr>
+                        <tr class="3"></tr>
+                        <tr class="4"></tr>
+                        <tr class="5"></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+         </div>
+    </div>
+
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -324,6 +361,8 @@
     <script src="js/creative.js"></script>
     <!-- Login Modal JavaScript -->
     <script src="js/login_modal.js"></script>
+    <!-- Calender Modal JavaScript -->
+    <script src="js/simplecalendar.js"></script>
 
 </body>
 

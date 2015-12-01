@@ -66,10 +66,6 @@
     });
 
 
-    $('a[href=#login]').bind('click', function(){
-           ('#mainNav').css('margin-right','15px');
-        }
-    )
 
 
 })(jQuery); // End of use strict
