@@ -5,13 +5,40 @@
 .calendar-container {
     background: #f9f9f9;
     color: #0e171c;
-    font: 300 100%/1.5em 'Lato', sans-serif;
     margin: 0;
 }
 #event-cal-modal table {
     border-spacing: 0;
     width: 100%;
 }
+
+#event-cal-modal span {
+    background-color:#373740;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    font-weight:700;
+    color:#FFF;
+    text-decoration:none;
+    text-align:center;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    cursor:pointer;
+    display:block;
+    margin: 0 auto;
+    padding: 4px;
+    -webkit-transition:background-color 150ms ease-in;
+    -moz-transition:background-color 150ms ease-in;
+    -ms-transition:background-color 150ms ease-in;
+    -o-transition:background-color 150ms ease-in;
+    transition:background-color 150ms ease-in;
+}
+
+#event-cal-modal span:hover {
+    background-color:#f05f40;
+}
+
 
 .calendar-container {
     height: 538px;
@@ -24,6 +51,9 @@
 
 .calendar {
     text-align: center;
+    float: left;
+    width: 100%;
+    position: relative;
 }
 
 .calendar header {
@@ -55,7 +85,7 @@
 }
 
 .calendar tbody td.active {
-    border: 2px solid #f05f40;
+    border-bottom: 2px solid #f05f40;
 }
 
 .calendar td {
@@ -131,10 +161,6 @@
     right: 35px;
 }
 
-.list {
-    margin-top: 20px;
-}
-
 .close {
     color: #A4AAAB;
     margin-top: -15px;
@@ -142,24 +168,40 @@
     float: right;
 }
 
+.list-event {
+    margin-top: 0px;
+    float: left;
+    height: 100%;
+    width: 55%;
+    display: none;
+}
 .day-event {
     background-color: #F2F2F2 ;
     width: 100%;
+    height: 90%;
     padding-top: 20px;
-    padding-bottom: 0px;
-    margin-bottom: 50px;
-    display:none;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
 
+.day-event h2.title{
+    text-decoration: underline;
 }
 
 .day-event p{
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
-.day-event span{
-    font-size: 12px;
+.day-event p.date{
+    padding-left: 0px;
+    font-size: 150%;
+}
+.day-event label.sign-up{
+    position: absolute;
+    bottom: 20px;
 }
 
 .day-event button {
@@ -185,55 +227,6 @@
 }
 input[type=checkbox] {display:none;}
 
-#event-cal-modal span {
-    background-color:#373740;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    border-radius:4px;
-    font-weight:700;
-    color:#FFF;
-    font-size:.85em;
-    letter-spacing:2px;
-    text-decoration:none;
-    font-family:'PT Sans', sans-serif;
-    text-align:center;
-    width:100%;
-    height:50px;
-    line-height:50px;
-    cursor:pointer;
-    display:block;
-    margin: 0 auto;
-    -webkit-transition:background-color 150ms ease-in;
-    -moz-transition:background-color 150ms ease-in;
-    -ms-transition:background-color 150ms ease-in;
-    -o-transition:background-color 150ms ease-in;
-    transition:background-color 150ms ease-in;
-}
-
-#event-cal-modal span:hover {
-    background-color:#f05f40;
-}
-
-#event-cal-modal input[type=checkbox]:checked + span {
-    background-color:#9C2E23;
-    text-decoration:none;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    border-radius:4px;
-    background:#9C2E23 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAX9JREFUeNpi+P//PwMNsS4QbwBiLnQ5WlqqAsRP/0PARiBmoYfFkkB8+z8qWALEjLS0mB+IL/3HDibSymJQXB7/jx/UgNSCvU4lwAbEG4DYkwi1WUxUspQZiOcRaSkIWOAKMk0Sg3jaf+IBOIVjMyQWiH8DsR+RljaTYOkBWJ5GNwRk2R+ooh9A7ETA0jwSLL0ATfEYqRpkyVc0xR+A2AyHpdFA/I9IS0F5WhRbAWIEtQQbeAXE6lhC5jeRlj4GYgVsRaYK1HBCmmWgmuyxhAwu8BpaXjNgs/gYkYbcAGIXPCGDDkCOM8eVPkCEFhE+JhX8BGJnfAkTxgC57BOVLAXlihBC2RA9Vf+k0FJQKk8nJv+jCwQi5WNyQAWxpR02wRQS8icy6CKlmMUlUUGipfOQK3lKLAbhdhIKfWZS6258kiAfzCZg6V4gZiOn0UBIAcgn63BYehK50Ke2xQxQH+3FUoqJUtJMIlYhLxAfxVJu09xiWENuMxCrUaNhCBBgAOAVfjALa5TLAAAAAElFTkSuQmCC) no-repeat 7% center;
-    background-size:15px 13px;
-}
-
-#event-cal-modal input[type=checkbox]:checked:hover + span {
-    background-color:#9C2E23;
-    color:rgba(255,255,255,0.5);
-    text-decoration:none;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    border-radius:4px;
-    background:#9C2E23 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAS5JREFUeNq8110OgjAMAGBGvIY3VESjt9jPg95PT+LccBIZ7dYOWJPGB+g+Ymg3hLW2QeLkcu/y2pSFdvl0eQevehjI3uXbfkMh96TShFq/xhG6J4faAtxEtSBOQTm4QWpnOBWl4CZT69fuYpiCpnBDrB1xLhrjgoFO8F1oGcFslUv4bV32zFoxmOHJta0XMn65dC0UaiddA8UGiN4axeC1cUkdmWviEls/NwL1FqjPNtNvoimPdC3yRCUTiTXbt0R/oSnw2iiK10BBvBY6w2uiE3xJr8oFtcrvxy/fVcyeVdGx98yotcOxN/znHeMUIhdMOG8c4reagssF43VEoT5O4ZJwvNUUFJtcEE5BMXyGpnanf5yDxjiI+hSJj7YunEBvhbuTCh9tD+jiR4ABAJ0SrJgNr1UAAAAAAElFTkSuQmCC) no-repeat 7% center;
-    background-size:15px 15px;
-}
 
 .print-btn {
     padding: 1px 14px 5px 14px;
