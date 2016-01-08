@@ -1,0 +1,20 @@
+{
+  "events": [
+    {
+      "event_id": "A001",
+      "event_title": "The First Event",
+      "date": "5",
+      "month": "12",
+      "year": "2015",
+      "desc": "A full description will go here"
+    },
+    {
+      "event_id": "A002",
+      "event_title": "The Second Event",
+      "date": "8",
+      "month": "1",
+      "year": "2016",
+      "desc": "A full description will go here."
+    }
+  ]
+}

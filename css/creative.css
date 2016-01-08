@@ -41,7 +41,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
@@ -86,10 +87,13 @@ aside {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-    text-transform: uppercase;
+    text-transform: none;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     color: #f05f40;
+}
+.navbar-default .navbar-header .navbar-brand span {
+    font-weight: 700;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -488,4 +492,64 @@ body {
 .navbar-fixed-top {
     -webkit-transition: 0s; /* Safari */
     transition: 0s;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: rgba(0, 0, 0, .15);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 700;
+    line-height: 1.42857143;
+    color: rgba(255,255,255,.7);
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: rgba(255,255,255,0.95);
+    text-decoration: none;
+    background-color: unset;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #337ab7;
+    outline: 0;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: unset;
+    border-color: #337ab7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: unset;
 }
