@@ -553,3 +553,17 @@ body {
     color: #fff;
     background-color: unset;
 }
+.alert {
+    padding: 3px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+.alert-danger {
+    color: #f91a0a;
+    background-color: #fffa0a;
+    border-color: #ebccd1;
+}
+.err-msg {
+    display:none;
+}

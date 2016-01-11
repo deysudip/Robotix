@@ -65,6 +65,10 @@
         });
     });
 
+    $('.modal').on('hidden.bs.modal', function (e) {
+        $(this).find("input,textarea,select").val('').end();
+        $(this).find(".err-msg").css('display', 'none');
+    })
 
 
 

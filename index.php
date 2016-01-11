@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,7 +79,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
 <?php
-$_SESSION['logged_user']='Sudip';
+
 if (!isset($_SESSION['logged_user'])){
 ?>
                     <li>
@@ -93,7 +96,7 @@ if (isset($_SESSION['logged_user'])) {
                         <ul class="dropdown-menu">
                             <li><a href="#">Submenu 1-1</a></li>
                             <li><a href="#">Submenu 1-2</a></li>
-                            <li><a href="#">Logout</a></li>
+                            <li><a href="php/logout.php">Logout</a></li>
                         </ul>
                     </li>
 
@@ -125,7 +128,7 @@ if (isset($_SESSION['logged_user'])) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
+                    <h2 class="section-heading"> We've got what you need!</h2>
                     <hr class="light">
                     <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
                     <a class="btn btn-default btn-xl" data-toggle="modal" href="#sign">Get Started!</a>
@@ -337,20 +340,27 @@ if (isset($_SESSION['logged_user'])) {
 
                 </div>
                 <div class="form-bottom user-login">
-                    <form role="form" action="php/login.php" method="post" class="login-form">
+                    <form role="form" action="" method="post"  class="login-form">
+                        <div class="alert alert-danger err-msg">
+
+                        </div>
                         <div class="form-group">
                             <label class="sr-only" for="username">Username</label>
                             <input type="text" name="username" placeholder="Username..." class="form-username form-control" id="username">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="password">Password</label>
-                            <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="password">
+                            <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="password" >
                         </div>
-                        <button type="submit" class="btn" name="user-login">Sign in!</button>
+
+                        <button type="submit" class="btn" name="user-login-btn">Sign in!</button>
                     </form>
                 </div>
                 <div class="form-bottom group-login">
-                    <form role="form" action="#" method="post" class="login-form">
+                    <form role="form" action="" method="post" class="login-form">
+                        <div class="alert alert-danger err-msg">
+
+                        </div>
                         <div class="form-group">
                             <label class="sr-only" for="group-name">Groupname</label>
                             <input type="text" name="group-name" placeholder="Group Username..." class="form-username form-control" id="group-name">
@@ -359,20 +369,23 @@ if (isset($_SESSION['logged_user'])) {
                             <label class="sr-only" for="group-password">Password</label>
                             <input type="password" name="group-password" placeholder="Group Password..." class="form-password form-control" id="group-password">
                         </div>
-                        <button type="submit" class="btn" name="group-login">Sign in!</button>
+                        <button type="submit" class="btn" name="group-login-btn">Sign in!</button>
                     </form>
                 </div>
                 <div class="form-bottom coord-login">
                     <form role="form" action="#" method="post" class="login-form">
+                        <div class="alert alert-danger err-msg">
+
+                        </div>
                         <div class="form-group">
                             <label class="sr-only" for="coord-name">Groupname</label>
                             <input type="text" name="coord-name" placeholder="Coordinator Username..." class="form-username form-control" id="coord-name">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="coord-password">Password</label>
-                            <input type="password" name="coord-password" placeholder="Coordinator Password..." class="form-password form-control" id="Coord-password">
+                            <input type="password" name="coord-password" placeholder="Coordinator Password..." class="form-password form-control" id="coord-password">
                         </div>
-                        <button type="submit" class="btn" name="coord-login">Sign in!</button>
+                        <button type="submit" class="btn" name="coord-login-btn">Sign in!</button>
                     </form>
                 </div>
             </div>
@@ -417,6 +430,9 @@ if (isset($_SESSION['logged_user'])) {
                     </div>
                 </div>
             </div>
+            <div class="calender-footer">
+                sfdagdsgsh
+            </div>
          </div>
     </div>
 
@@ -454,7 +470,14 @@ if (isset($_SESSION['logged_user'])) {
 
                 </div>
                 <div class="form-bottom user-sign">
-                    <form role="form" action="php/signin.php" method="post" class="login-form">
+                    <form role="form" action="#" method="post" class="login-form">
+                        <div class="alert alert-danger err-msg">
+
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="userfullname-sign">User Full Name</label>
+                            <input type="text" name="userfullname-sign" placeholder="User Full Name..." class="form-username form-control" id="userfullname-sign">
+                        </div>
                         <div class="form-group">
                             <label class="sr-only" for="username-sign">Username</label>
                             <input type="text" name="username-sign" placeholder="Username..." class="form-username form-control" id="username-sign">
@@ -464,30 +487,33 @@ if (isset($_SESSION['logged_user'])) {
                             <input type="password" name="password-sign" placeholder="Password..." class="form-password form-control" id="password-sign">
                         </div>
                         <div class="form-group">
-                            <label class="sr-only" for="password-sign-conf"> Confirm Password</label>
-                            <input type="password" name="password-sign-conf" placeholder="Confirm Password..." class="form-password form-control" id="password-sign-conf">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="insti-sign">Instituition Name</label>
-                            <input type="text" name="insti-sign" placeholder="Instituition Name..." class="form-username form-control" id="insti-sign">
-                        </div>
-                        <div class="form-group">
                             <label class="sr-only" for="email-sign">Email Id</label>
                             <input type="email" name="email-sign" placeholder="Email Id..." class="form-username form-control" id="email-sign">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="contact-sign">Contact</label>
                             <input type="text" name="contact-sign" placeholder="Contact..." class="form-username form-control" id="contact-sign"
-                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
                         </div>
-                        <button type="submit" class="btn" name="user-sign">Sign Up!</button>
+                        <div class="form-group">
+                            <label class="sr-only" for="insti-sign">Instituition Name</label>
+                            <select name="insti-sign"  class="form-username form-control insti-drop" id="insti-sign">
+                                <option disabled selected value="">Select Your Instituition..</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="insti-coord-sign">Coordinator Name</label>
+                            <select name="insti-coord-sign"  class="form-username form-control coord-drop" id="insti-coord-sign">
+                                <option disabled selected value="">Select Your Coordinator..</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn" name="user-sign-btn">Sign Up!</button>
                     </form>
                 </div>
                 <div class="form-bottom group-sign">
-                    <form role="form" action="#" method="post" class="login-form">
-                        <div class="form-group">
-                            <label class="sr-only" for="group-event-sign">Event Id</label>
-                            <input type="text" name="group-event-sign" placeholder="Event Id..." class="form-username form-control" id="group-event-sign">
+                    <form role="form" action="#" method="post" class="login-form" id="group-sign">
+                        <div class="alert alert-danger err-msg">
+
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="group-username-sign">Group Username</label>
@@ -498,12 +524,16 @@ if (isset($_SESSION['logged_user'])) {
                             <input type="password" name="group-password-sign" placeholder="Group Password..." class="form-password form-control" id="group-password-sign">
                         </div>
                         <div class="form-group">
-                            <label class="sr-only" for="group-password-sign-conf"> Confirm Group Password</label>
-                            <input type="password" name="group-password-sign-conf" placeholder="Confirm Group Password..." class="form-password form-control" id="group-password-sign-conf">
+                            <label class="sr-only" for="group-insti-sign">Instituition Name</label>
+                            <select name="group-insti-sign"  class="form-username form-control insti-drop" id="group-insti-sign">
+                                <option disabled selected value="">Select Your Instituition..</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label class="sr-only" for="group-insti-sign">Instituition Name</label>
-                            <input type="text" name="group-insti-sign" placeholder="Instituition Name..." class="form-username form-control" id="group-insti-sign">
+                            <label class="sr-only" for="group-insti-coord-sign">Coordinator Name</label>
+                            <select name="group-insti-coord-sign"  class="form-username form-control coord-drop" id="group-insti-coord-sign">
+                                <option disabled selected value="">Select Your Coordinator..</option>
+                            </select>
                         </div>
                         <div class="form-group member-nav">
                             <header>
@@ -524,7 +554,7 @@ if (isset($_SESSION['logged_user'])) {
                             <div class="form-group">
                                 <label class="sr-only" for="first-mem-contact">First Member Contact</label>
                                 <input type="text" name="first-mem-contact" placeholder="First Member Contact..." class="form-number form-control" id="first-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
                             </div>
                         </div>
                         <div class="form-group-sub" id="Second">
@@ -539,7 +569,7 @@ if (isset($_SESSION['logged_user'])) {
                             <div class="form-group">
                                 <label class="sr-only" for="second-mem-contact">Second Member Contact</label>
                                 <input type="text" name="second-mem-contact" placeholder="Second Member Contact..." class="form-number form-control" id="second-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
                             </div>
                         </div>
                         <div class="form-group-sub" id="Third">
@@ -554,7 +584,7 @@ if (isset($_SESSION['logged_user'])) {
                             <div class="form-group">
                                 <label class="sr-only" for="third-mem-contact">Third Member Contact</label>
                                 <input type="text" name="third-mem-contact" placeholder="Third Member Contact..." class="form-number form-control" id="third-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
                             </div>
                         </div>
                         <div class="form-group-sub" id="Fourth">
@@ -569,14 +599,21 @@ if (isset($_SESSION['logged_user'])) {
                             <div class="form-group">
                                 <label class="sr-only" for="fourth-mem-contact">Fourth Member Contact</label>
                                 <input type="text" name="fourth-mem-contact" placeholder="Fourth Member Contact..." class="form-number form-control" id="fourth-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
                             </div>
                         </div>
-                        <button type="submit" class="btn" name="group-sign">SIGN UP AS A TEAM!</button>
+                        <button type="submit" form="group-sign" class="btn" name="group-sign-btn">SIGN UP AS A TEAM!</button>
                     </form>
                 </div>
                 <div class="form-bottom coord-sign">
                     <form role="form" action="#" method="post" class="login-form">
+                        <div class="alert alert-danger err-msg">
+
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="coord-fullname-sign">Username</label>
+                            <input type="text" name="coord-fullname-sign" placeholder="User Full Name..." class="form-username form-control" id="coord-fullname-sign">
+                        </div>
                         <div class="form-group">
                             <label class="sr-only" for="coord-username-sign">Coordinator Username</label>
                             <input type="text" name="coord-username-sign" placeholder="Coordinator Username..." class="form-username form-control" id="coord-username-sign">
@@ -586,19 +623,27 @@ if (isset($_SESSION['logged_user'])) {
                             <input type="password" name="coord-password-sign" placeholder="Coordinator Password..." class="form-password form-control" id="coord-password-sign">
                         </div>
                         <div class="form-group">
-                            <label class="sr-only" for="coord-password-sign-conf">Confirm Coordinator Password</label>
-                            <input type="password" name="coord-password-sign-conf" placeholder="Confirm Coordinator Password..." class="form-password form-control" id="coord-password-sign-conf">
-                        </div>
-                        <div class="form-group">
                             <label class="sr-only" for="coord-email-sign">Coordinator Email Id</label>
                             <input type="email" name="coord-email-sign" placeholder="Coordinator Email Id..." class="form-email form-control" id="coord-email-sign">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="coord-contact-sign">Coordinator Contact</label>
                             <input type="text" name="coord-contact-sign" placeholder="Coordinator Contact..." class="form-number form-control" id="coord-contact-sign"
-                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
                         </div>
-                        <button type="submit" class="btn" name="coord-sign">SIGN UP AS A COORDINATOR !</button>
+                        <div class="form-group">
+                            <label class="sr-only" for="coord-insti-sign">Instituition Name</label>
+                            <select name="coord-insti-sign"  class="form-username form-control insti-drop" id="coord-insti-sign">
+                                <option disabled selected value="">Select Your Instituition..</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="coord-mng-sign">Relationship Manager Name</label>
+                            <select name="coord-mng-sign"  class="form-username form-control mng-drop" id="coord-mng-sign">
+                                <option disabled selected value="">Select Your Relationship Manager..</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn" name="coord-sign-btn">SIGN UP AS A COORDINATOR!</button>
                     </form>
                 </div>
             </div>

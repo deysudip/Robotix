@@ -7,6 +7,11 @@
     color: #0e171c;
     margin: 0;
 }
+.calendar-footer {
+    background: #f91a0a;
+    color: #0e171c;
+    margin: 0;
+}
 #event-cal-modal table {
     border-spacing: 0;
     width: 100%;
@@ -231,6 +236,7 @@ input[type=checkbox] {display:none;}
 .print-btn {
     padding: 1px 14px 5px 14px;
 }
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
