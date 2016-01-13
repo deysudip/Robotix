@@ -65,8 +65,9 @@
         });
     });
 
+    // resetting fields in a modal on hide
     $('.modal').on('hidden.bs.modal', function (e) {
-        $(this).find("input,textarea,select").val('').end();
+        $(this).find("input:not([readonly]),textarea,select").val('').end();
         $(this).find(".err-msg").css('display', 'none');
     })
 

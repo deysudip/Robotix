@@ -181,4 +181,111 @@ if($_POST['signin_type']=="coord_signin"){
         echo $err_msg;
     }
 }
+
+// group sign up
+if($_POST['signin_type']=="group_signin") {
+
+    if (isset($_SESSION['logged_user'])) {
+        $_SESSION['logged_user'] = '';
+        $_SESSION['login_type'] = '';
+        session_destroy();
+    }
+
+    $group_user_name=mysqli_real_escape_string($conn,$_POST['group_username']);
+    $group_pass=mysqli_real_escape_string($conn,$_POST['group_password']);
+    $group_insti=mysqli_real_escape_string($conn,$_POST['group_insti']);
+    $group_insti_code=mysqli_real_escape_string($conn,$_POST['group_insti_code']);
+    $group_coord_name=mysqli_real_escape_string($conn,$_POST['group_coord_name']);
+    $group_mem_count=mysqli_real_escape_string($conn,$_POST['group_mem_count']);
+    $type=mysqli_real_escape_string($conn,'group');
+    
+    $column_name = "(group_user_name,group_password,group_instituition,group_instituition_code,group_coordinator,group_mem_count";
+    $values = "('$group_user_name','$group_pass','$group_insti','$group_insti_code','$group_coord_name','$group_mem_count'";
+    
+    $first_mem_full_name=mysqli_real_escape_string($conn,$_POST['first_mem_fullname']);
+    $first_mem_email=mysqli_real_escape_string($conn,$_POST['first_mem_email']);
+    $first_mem_contact=mysqli_real_escape_string($conn,$_POST['first_mem_contact']);
+
+    $column_name .= ",first_mem_fullname,first_mem_email,first_mem_contact";
+    $values .= ",'$first_mem_full_name','$first_mem_email','$first_mem_contact'";
+
+    $second_mem_full_name=mysqli_real_escape_string($conn,$_POST['second_mem_fullname']);
+    $second_mem_email=mysqli_real_escape_string($conn,$_POST['second_mem_email']);
+    $second_mem_contact=mysqli_real_escape_string($conn,$_POST['second_mem_contact']);
+
+    $column_name .= ",second_mem_fullname,second_mem_email,second_mem_contact";
+    $values .= ",'$second_mem_full_name','$second_mem_email','$second_mem_contact'";
+    
+    if ($group_mem_count > 2){
+        $third_mem_full_name=mysqli_real_escape_string($conn,$_POST['third_mem_fullname']);
+        $third_mem_email=mysqli_real_escape_string($conn,$_POST['third_mem_email']);
+        $third_mem_contact=mysqli_real_escape_string($conn,$_POST['third_mem_contact']);
+
+        $column_name .= ",third_mem_fullname,third_mem_email,third_mem_contact";
+        $values .= ",'$third_mem_full_name','$third_mem_email','$third_mem_contact'";
+    }
+
+    if ($group_mem_count > 3){
+        $fourth_mem_full_name=mysqli_real_escape_string($conn,$_POST['fourth_mem_fullname']);
+        $fourth_mem_email=mysqli_real_escape_string($conn,$_POST['fourth_mem_email']);
+        $fourth_mem_contact=mysqli_real_escape_string($conn,$_POST['fourth_mem_contact']);
+
+        $column_name .= ",fourth_mem_fullname,fourth_mem_email,fourth_mem_contact";
+        $values .= ",'$fourth_mem_full_name','$fourth_mem_email','$fourth_mem_contact'";
+    }
+
+    $check=true;
+
+    if($check){
+        $query_username="select group_user_name from group_details where group_user_name='$group_user_name'";
+        $res=mysqli_query($conn,$query_username);
+        $num_rows= mysqli_num_rows($res);
+        if ($num_rows!=0){
+            $check=false;
+            $err_msg="Group name is already existed!! Please choose another";
+        }
+    }
+
+    if($check) {
+        $column_name .= ")";
+        $values .=")";
+
+        $query_group = "insert into group_details " .$column_name. " values" .$values;
+        $row = 0;
+        if (mysqli_query($conn, $query_group)) {
+            $row = mysqli_affected_rows($conn);
+        }
+
+        if ($row != 1) {
+            $check = false;
+            $err_msg = "Some problem occurred!! Please try again";
+        }
+    }
+
+    if($check) {
+        $query_login = "insert into user_login_info (type,user_name,user_password) values('$type','$group_user_name','$group_pass')";
+        $row = 0;
+        if (mysqli_query($conn, $query_login)) {
+            $row = mysqli_affected_rows($conn);
+        }
+
+        if ($row != 1) {
+            $check = false;
+            $err_msg = "Some problem occurred!! Please try again";
+        }
+    }
+    if($check){
+        mysqli_commit($conn);
+        mysqli_close($conn);
+        session_start();
+        $_SESSION['logged_user']=$group_user_name;
+        $_SESSION['login_type']=$type;
+    }
+    else{
+        mysqli_rollback($conn);
+        mysqli_close($conn);
+        echo $err_msg;
+    }
+    
+}
 ?>

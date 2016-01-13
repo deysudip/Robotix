@@ -2,59 +2,8 @@
 jQuery(document).ready(function() {
 
 
-	/* auto population of instituition name */
-    $('a[href=#sign]').on('click', function(){
+	/* select and show sign-up and login tab */
 
-        var data="req_type=insti";
-        $.ajax({
-            type: "POST",
-            url: "php/function.php",
-            data: data,
-            success: function (html) {
-                $(".insti-drop").html(html);
-            }
-        })
-    });
-
-    /* auto population of coordinator name based on instituition name */
-    $('select.insti-drop').on('change', function(){
-
-        var insti_code = $(this).val();
-        var data="req_type=coord&insti_code=" + insti_code;
-        $.ajax({
-            type: "POST",
-            url: "php/function.php",
-            data: data,
-            success: function (html) {
-                $(".coord-drop").html(html);
-            }
-        })
-
-    });
-
-    /* auto population of Relationship manger name */
-    $('select#coord-insti-sign').on('change', function(){
-
-        var insti_code = $(this).val();
-        var data="req_type=mng&insti_code=" + insti_code;
-        $.ajax({
-            type: "POST",
-            url: "php/function.php",
-            data: data,
-            success: function (html) {
-                $(".mng-drop").html(html);
-            }
-        })
-    });
-
-
-	/*
-	 Form validation
-	 */
-	$('.login-form input[type="text"], .login-form input[type="password"], .login-form input[type="email"], .login-form textarea, .login-form select').on('focus', function () {
-		$(this).removeClass('input-error');
-        $(".err-msg").css('display', 'none');
-	});
 	$(".login-option ul li").on('click', function (e) {
 		$(this).siblings().removeClass('selected');
 		$(this).addClass('selected');
@@ -71,55 +20,180 @@ jQuery(document).ready(function() {
 		$('#sign-modal .' + sign_type).css('display', 'block');
 	});
 
+	/* auto population of instituition name */
+    $('a[href=#sign]').on('click', function(){
+
+        var data="req_type=insti";
+        $.ajax({
+            type: "POST",
+            url: "php/function.php",
+            data: data,
+            success: function (html) {
+                $(".insti-drop").html(html);
+            }
+        })
+    });
+
+    /* auto population of coordinator name based on instituition name for user sign up */
+    $('select#insti-sign').on('change', function(){
+
+        var insti_code = $(this).val();
+        var data="req_type=coord&insti_code=" + insti_code;
+        $.ajax({
+            type: "POST",
+            url: "php/function.php",
+            data: data,
+            success: function (html) {
+                $("#insti-coord-sign").html(html);
+            }
+        })
+
+    });
+
+	/* auto population of coordinator name based on instituition name for group sign up */
+	$('select#group-insti-sign').on('change', function(){
+
+		var insti_code = $(this).val();
+		var data="req_type=coord&insti_code=" + insti_code;
+		$.ajax({
+			type: "POST",
+			url: "php/function.php",
+			data: data,
+			success: function (html) {
+				$("#group-insti-coord-sign").html(html);
+			}
+		})
+
+	});
+
+    /* auto population of Relationship manager name */
+    $('select#coord-insti-sign').on('change', function(){
+
+        var insti_code = $(this).val();
+        var data="req_type=mng&insti_code=" + insti_code;
+        $.ajax({
+            type: "POST",
+            url: "php/function.php",
+            data: data,
+            success: function (html) {
+                $(".mng-drop").html(html);
+            }
+        })
+    });
+
+	/* add one member */
+	$('.btn-plus-mem').on('click', function (e){
+
+		var count = $("#group-mem-count").val();
+		count = parseInt(count,10);
+		if (count<=3){
+			count=count + 1;
+		}
+		var mem = convertNumber(count);
+		$("#group-mem-count").val(count);
+
+		var mem_form='';
+		mem_form += '<div class="form-group-sub" id="' +mem+ '" member="' + count + '">';
+		mem_form += '<div class="form-group">';
+		mem_form += '<label class="sr-only" for="' +mem+ '-mem-name">' +mem+ 'member name</label>';
+		mem_form += '<input type="text" name="' +mem+ '-mem-name" placeholder="' +mem+ ' Member name..." class="form-username form-control" id="' +mem+ '-mem-name">';
+		mem_form += '</div>';
+		mem_form += '<div class="form-group">';
+		mem_form += '<label class="sr-only" for="' +mem+ '-mem-email">' +mem+ ' member Email Id</label>';
+		mem_form += '<input type="email" name="' +mem+ '-mem-email" placeholder="' +mem+ ' Member Email Id..." class="form-email form-control" id="' +mem+ '-mem-email">';
+		mem_form += '</div>';
+		mem_form += '<div class="form-group">';
+		mem_form += '<label class="sr-only" for="' +mem+ '-mem-contact">' +mem+ ' Member Contact</label>';
+		mem_form += '<input type="text" name="' +mem+ '-mem-contact" placeholder="' +mem+ ' Member Contact..." class="form-number form-control" id="' +mem+ '-mem-contact"';
+		mem_form += 'onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10">';
+		mem_form += '</div>';
+		mem_form += '</div>';
+
+		$('.member-details').append(mem_form);
+		$(".member-nav header h2").attr("member", count).text(mem + " Member");
+		$(".form-group-sub").removeClass('select-mem');
+		$("#" + mem).addClass('select-mem');
+	});
+
+	/*delete last member */
+	$('.btn-minus-mem').on('click', function (e){
+
+		var count = $("#group-mem-count").val();
+		count = parseInt(count,10);
+
+		if (count>=3){
+			var last_mem = convertNumber(count);
+			$(".form-group-sub#" +last_mem).remove();
+			count=count - 1;
+		}
+		var mem = convertNumber(count);
+		$("#group-mem-count").val(count);
+		$(".member-nav header h2").attr("member", count).text(mem + " Member");
+		$(".form-group-sub").removeClass('select-mem');
+		$("#" + mem).addClass('select-mem');
+
+	});
+
+	/* convert cardinal to ordinal*/
+	function convertNumber (cardinal){
+
+		var cardinal=parseInt(cardinal,10);
+		var ordinal_array=['Zeroth','First','Second','Third','Fourth'];
+		var ordinal=ordinal_array[cardinal];
+		return ordinal;
+	};
+
+	/* show the particular group member tab on next member click*/
 	$(".btn-next-mem").on('click', function (e) {
 
 		var member = $('.member-nav header h2').attr('member');
-		switch (member) {
-			case 'First':
-				var next_mem = 'Second';
-				break;
-			case 'Second':
-				var next_mem = 'Third';
-				break;
-			case 'Third':
-				var next_mem = 'Fourth';
-				break;
-			case 'Fourth':
-				var next_mem = 'First';
-				break;
-			default:
-				break;
+		var count = $("#group-mem-count").val();
+		member = parseInt(member,10);
+		count = parseInt(count,10);
+		var next_mem = '';
+		if ((member < count)){
+			member+=1;
+			next_mem = convertNumber(member);
 		}
-		$(".member-nav header h2").attr("member", next_mem);
-		$(".member-nav header h2").text(next_mem + " Member");
+		else if(member == count){
+			member = 1;
+			next_mem =  convertNumber(member);
+		}
+
+		$(".member-nav header h2").attr("member", member).text(next_mem + " Member");
 		$(".form-group-sub").removeClass('select-mem');
 		$("#" + next_mem).addClass('select-mem');
 
 	});
+
+	/* show the particular group member tab on prev member click*/
 	$(".btn-prev-mem").on('click', function (e) {
 
 		var member = $('.member-nav header h2').attr('member');
-		switch (member) {
-			case 'First':
-				var next_mem = 'Fourth';
-				break;
-			case 'Second':
-				var next_mem = 'First';
-				break;
-			case 'Third':
-				var next_mem = 'Second';
-				break;
-			case 'Fourth':
-				var next_mem = 'Third';
-				break;
-			default:
-				break;
-		}
-		$(".member-nav header h2").attr("member", next_mem);
-		$(".member-nav header h2").text(next_mem + " Member");
-		$(".form-group-sub").removeClass('select-mem');
-		$("#" + next_mem).addClass('select-mem');
+		var count = $("#group-mem-count").val();
+		member = parseInt(member,10);
+		count = parseInt(count,10);
+		var prev_mem='';
 
+		if ((member > 1) && (member <= count)){
+			member-=1;
+			prev_mem = convertNumber(member);
+		}
+		else if(member == 1){
+			member = count;
+			prev_mem =  convertNumber(member);
+		}
+
+		$(".member-nav header h2").attr("member", member).text(prev_mem + " Member");
+		$(".form-group-sub").removeClass('select-mem');
+		$("#" + prev_mem).addClass('select-mem');
+
+	});
+
+	//Form validation
+	$('.login-form input[type="text"], .login-form input[type="password"], .login-form input[type="email"], .login-form textarea, .login-form select').on('focus', function () {
+		$(this).removeClass('input-error');
+		$(".err-msg").css('display', 'none');
 	});
 
 	function checkForm(parent) {
@@ -128,6 +202,16 @@ jQuery(document).ready(function() {
 			if ($(this).val() == ""||$(this).val() == null) {
 				$(this).addClass('input-error');
 				$check=false;
+				var err_field=this;
+
+				if($(err_field).parent().parent().hasClass('form-group-sub')){
+					var member = $(err_field).closest(".form-group-sub").attr('id');
+					var mem_num = $(err_field).closest(".form-group-sub").attr('member');
+					$(".member-nav header h2").attr("member", mem_num).text(member + " Member");
+					$(err_field).closest(".form-group-sub").siblings().removeClass('select-mem');
+					$(err_field).closest(".form-group-sub").addClass('select-mem')
+				}
+				return false;
             }
 			else {
                 $check=true;
@@ -316,10 +400,9 @@ jQuery(document).ready(function() {
 		}
 	});
 
-    // Coordinator sign-up
+    // coordinator sign-up
     $("button:submit[name=coord-sign-btn]").on('click', function (e) {
-
-        $(".coord-sign .err-msg").css('display', 'none');
+		$(".coord-sign .err-msg").css('display', 'none');
         $parent = $(this).parent();
         var check = checkForm($parent);
 
@@ -347,23 +430,103 @@ jQuery(document).ready(function() {
                     }
                     else {
                         $err_msg = html;
-                        $(".coord-sign .err-msg").css('display', 'inline', 'important');
-                        $(".coord-sign .err-msg").html('<span><strong>' + $err_msg + '</strong></span>');
+                        $(".coord-sign .err-msg").css('display', 'inline', 'important').html('<span><strong>' + $err_msg + '</strong></span>');
+                        //$(".coord-sign .err-msg").html('<span><strong>' + $err_msg + '</strong></span>');
                         e.preventDefault();
                     }
                 },
                 error: function(xhr, status, error) {
-                    $(".coord-sign .err-msg").css('display', 'inline', 'important');
-                    $(".coord-sign .err-msg").html('<span><strong> An error occured!! Please try again.</strong></span>');
+                    $(".coord-sign .err-msg").css('display', 'inline', 'important').html('<span><strong> An error occured!! Please try again.</strong></span>');
+                    //$(".coord-sign .err-msg").html('<span><strong> An error occured!! Please try again.</strong></span>');
                     e.preventDefault();
                 }
 
             });
         }
         else{
-            $(".user-sign .err-msg").css('display', 'inline', 'important');
-            $(".user-sign .err-msg").html('<span><strong> All fields are mandatory!!</strong></span>');
+            $(".coord-sign .err-msg").css('display', 'inline', 'important').html('<span><strong> All fields are mandatory!!</strong></span>');
+            //$(".coord-sign .err-msg").html('<span><strong> All fields are mandatory!!</strong></span>');
             e.preventDefault();
         }
     });
+
+	// group sign-up
+	$("button:submit[name=group-sign-btn]").on('click', function (e){
+		$(".group-sign .err-msg").css('display', 'none');
+		$parent = $(this).parent();
+		var check = checkForm($parent);
+
+		if(check) {
+			var group_username = $("#group-username-sign").val();
+			var group_password = $("#group-password-sign").val();
+			var group_insti_code = $("#group-insti-sign").val();
+			var group_insti = $("#group-insti-sign option:selected").text();
+			var group_coord_name = $("#group-insti-coord-sign").val();
+			var group_mem_count = $("#group-mem-count").val();
+			var signin_type = 'group_signin';
+			var data= "group_username=" + group_username + "&group_password=" + group_password + "&group_insti_code=" + group_insti_code
+					+ "&group_insti=" + group_insti + "&group_coord_name=" + group_coord_name + "&group_mem_count=" + group_mem_count
+					+ "&signin_type=" + signin_type;
+
+			var first_mem_fullname = $("#First-mem-name").val();
+			var first_mem_email = $("#First-mem-email").val();
+			var first_mem_contact = $("#First-mem-contact").val();
+
+			data += "&first_mem_fullname=" + first_mem_fullname + "&first_mem_email=" + first_mem_email + "&first_mem_contact=" + first_mem_contact;
+
+			var second_mem_fullname = $("#Second-mem-name").val();
+			var second_mem_email = $("#Second-mem-email").val();
+			var second_mem_contact = $("#Second-mem-contact").val();
+
+			data += "&second_mem_fullname=" + second_mem_fullname + "&second_mem_email=" + second_mem_email + "&second_mem_contact=" + second_mem_contact;
+
+			if (group_mem_count > 2){
+				var third_mem_fullname = $("#Third-mem-name").val();
+				var third_mem_email = $("#Third-mem-email").val();
+				var third_mem_contact = $("#Third-mem-contact").val();
+
+				data += "&third_mem_fullname=" + third_mem_fullname + "&third_mem_email=" + third_mem_email + "&third_mem_contact=" + third_mem_contact;
+			}
+
+			if (group_mem_count > 3){
+				var fourth_mem_fullname = $("#Fourth-mem-name").val();
+				var fourth_mem_email = $("#Fourth-mem-email").val();
+				var fourth_mem_contact = $("#Fourth-mem-contact").val();
+
+				data += "&fourth_mem_fullname=" + fourth_mem_fullname + "&fourth_mem_email=" + fourth_mem_email + "&fourth_mem_contact=" + fourth_mem_contact;
+			}
+
+			$.ajax({
+				type: "POST",
+				url: "php/signin.php",
+				data: data,
+				async: false,
+				success: function (html) {
+					if (html == '') {
+						window.location.href = "index.php";
+					}
+					else {
+						$err_msg = html;
+						$(".group-sign .err-msg").css('display', 'inline', 'important').html('<span><strong>' + $err_msg + '</strong></span>');
+						//$(".group-sign .err-msg").html('<span><strong>' + $err_msg + '</strong></span>');
+						e.preventDefault();
+					}
+				},
+				error: function(xhr, status, error) {
+					$(".group-sign .err-msg").css('display', 'inline', 'important').html('<span><strong> An error occured!! Please try again.</strong></span>');
+					//$(".group-sign .err-msg").html('<span><strong> An error occured!! Please try again.</strong></span>');
+					e.preventDefault();
+				}
+
+			});
+
+		}
+		else{
+			$(".group-sign .err-msg").css('display', 'inline', 'important').html('<span><strong> All fields are mandatory!!</strong></span>');
+			//$(".group-sign .err-msg").html('<span><strong> All fields are mandatory!!</strong></span>');
+			e.preventDefault();
+		}
+
+
+	});
 });

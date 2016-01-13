@@ -20,7 +20,8 @@ session_start();
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">-->
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
@@ -467,8 +468,9 @@ if (isset($_SESSION['logged_user'])) {
                             </li>
                         </ul>
                     </div>
-
                 </div>
+
+                <!-- User sign up form -->
                 <div class="form-bottom user-sign">
                     <form role="form" action="#" method="post" class="login-form">
                         <div class="alert alert-danger err-msg">
@@ -510,6 +512,8 @@ if (isset($_SESSION['logged_user'])) {
                         <button type="submit" class="btn" name="user-sign-btn">Sign Up!</button>
                     </form>
                 </div>
+
+                <!-- Group sign up form -->
                 <div class="form-bottom group-sign">
                     <form role="form" action="#" method="post" class="login-form" id="group-sign">
                         <div class="alert alert-danger err-msg">
@@ -537,74 +541,57 @@ if (isset($_SESSION['logged_user'])) {
                         </div>
                         <div class="form-group member-nav">
                             <header>
-                                <h2 member="First">First Member</h2>
-                                <a class="btn-prev-mem fontawesome-angle-left" href="#"></a>
-                                <a class="btn-next-mem fontawesome-angle-right" href="#"></a>
+                               <a class="btn-prev-mem fontawesome-angle-left" href="#"></a>
+                               <h2 member="1">First Member</h2>
+                               <a class="btn-next-mem fontawesome-angle-right" href="#"></a>
                             </header>
                         </div>
-                        <div class="form-group-sub select-mem" id="First">
-                            <div class="form-group">
-                                <label class="sr-only" for="first-mem-name">First member name</label>
-                                <input type="text" name="first-mem-name" placeholder="First Member name..." class="form-username form-control" id="first-mem-name">
+                        <div class="form-group">
+                            <input type="text" name="group-mem-count" id="group-mem-count" value="2" readonly hidden>
+                        </div>
+                        <div class="member-details">
+                            <div class="form-group-sub select-mem" id="First" member="1">
+                                <div class="form-group">
+                                    <label class="sr-only" for="First-mem-name">First member name</label>
+                                    <input type="text" name="First-mem-name" placeholder="First Member name..." class="form-username form-control" id="First-mem-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="First-mem-email">First member Email Id</label>
+                                    <input type="email" name="First-mem-email" placeholder="First Member Email Id..." class="form-email form-control" id="First-mem-email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="First-mem-contact">First Member Contact</label>
+                                    <input type="text" name="First-mem-contact" placeholder="First Member Contact..." class="form-number form-control" id="First-mem-contact"
+                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="first-mem-email">First member Email Id</label>
-                                <input type="email" name="first-mem-email" placeholder="First Member Email Id..." class="form-email form-control" id="first-mem-email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="first-mem-contact">First Member Contact</label>
-                                <input type="text" name="first-mem-contact" placeholder="First Member Contact..." class="form-number form-control" id="first-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
+                            <div class="form-group-sub" id="Second" member="2">
+                                <div class="form-group">
+                                    <label class="sr-only" for="Second-mem-name">Second member name</label>
+                                    <input type="text" name="Second-mem-name" placeholder="Second Member name..." class="form-username form-control" id="Second-mem-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="Second-mem-email">Second member Email Id</label>
+                                    <input type="email" name="Second-mem-email" placeholder="Second Member Email Id..." class="form-email form-control" id="Second-mem-email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="Second-mem-contact">Second Member Contact</label>
+                                    <input type="text" name="Second-mem-contact" placeholder="Second Member Contact..." class="form-number form-control" id="Second-mem-contact"
+                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group-sub" id="Second">
-                            <div class="form-group">
-                                <label class="sr-only" for="second-mem-name">Second member name</label>
-                                <input type="text" name="second-mem-name" placeholder="Second Member name..." class="form-username form-control" id="second-mem-name">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="second-mem-email">Second member Email Id</label>
-                                <input type="email" name="second-mem-email" placeholder="Second Member Email Id..." class="form-email form-control" id="second-mem-email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="second-mem-contact">Second Member Contact</label>
-                                <input type="text" name="second-mem-contact" placeholder="Second Member Contact..." class="form-number form-control" id="second-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
-                            </div>
-                        </div>
-                        <div class="form-group-sub" id="Third">
-                            <div class="form-group">
-                                <label class="sr-only" for="third-mem-name">Third member name</label>
-                                <input type="text" name="third-mem-name" placeholder="Third Member name..." class="form-username form-control" id="third-mem-name">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="third-mem-email">Third member Email Id</label>
-                                <input type="email" name="third-mem-email" placeholder="Third Member Email Id..." class="form-email form-control" id="third-mem-email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="third-mem-contact">Third Member Contact</label>
-                                <input type="text" name="third-mem-contact" placeholder="Third Member Contact..." class="form-number form-control" id="third-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
-                            </div>
-                        </div>
-                        <div class="form-group-sub" id="Fourth">
-                            <div class="form-group">
-                                <label class="sr-only" for="fourth-mem-name">Fourth member name</label>
-                                <input type="text" name="fourth-mem-name" placeholder="Fourth Member name..." class="form-username form-control" id="fourth-mem-name">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="fourth-mem-email">Fourth member Email Id</label>
-                                <input type="email" name="fourth-mem-email" placeholder="Fourth Member Email Id..." class="form-email form-control" id="fourth-mem-email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="fourth-mem-contact">Fourth Member Contact</label>
-                                <input type="text" name="fourth-mem-contact" placeholder="Fourth Member Contact..." class="form-number form-control" id="fourth-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
-                            </div>
+                        <div class="form-group member-add">
+                            <header>
+                               <a class="btn-plus-mem fa fa-plus-circle" href="#" title="Add new member"></a>
+                                <a class="btn-minus-mem fa fa-minus-circle" href="#" title="Delete last member"></a>
+                            </header>
                         </div>
                         <button type="submit" form="group-sign" class="btn" name="group-sign-btn">SIGN UP AS A TEAM!</button>
                     </form>
                 </div>
+
+                <!-- Coord sign up form -->
                 <div class="form-bottom coord-sign">
                     <form role="form" action="#" method="post" class="login-form">
                         <div class="alert alert-danger err-msg">
