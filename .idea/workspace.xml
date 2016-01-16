@@ -8,11 +8,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/login_modal.css" afterPath="$PROJECT_DIR$/css/login_modal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/calendar_modal.css" afterPath="$PROJECT_DIR$/css/calendar_modal.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/creative.js" afterPath="$PROJECT_DIR$/js/creative.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/login_modal.js" afterPath="$PROJECT_DIR$/js/login_modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/conn.php" afterPath="$PROJECT_DIR$/php/conn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/simplecalendar.js" afterPath="$PROJECT_DIR$/js/simplecalendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/function.php" afterPath="$PROJECT_DIR$/php/function.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/signin.php" afterPath="$PROJECT_DIR$/php/signin.php" />
     </list>
     <ignored path="Robotix.iws" />
@@ -55,7 +56,7 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="group_details" />
+        <option name="myItemId" value="event_details" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -69,103 +70,66 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.384615">
-              <caret line="567" column="77" selection-start-line="567" selection-start-column="77" selection-end-line="567" selection-end-column="77" />
+            <state vertical-scroll-proportion="-5.8545456">
+              <caret line="432" column="45" selection-start-line="432" selection-start-column="45" selection-end-line="432" selection-end-column="45" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#8;n#form#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_modal.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/login_modal.js">
+      <file leaf-file-name="simplecalendar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/simplecalendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.77648765">
-              <caret line="209" column="69" selection-start-line="209" selection-start-column="69" selection-end-line="209" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
               <folding>
-                <element signature="e#136#388#0" expanded="false" />
-                <element signature="e#442#690#0" expanded="false" />
-                <element signature="e#783#1039#0" expanded="false" />
-                <element signature="e#1183#1511#0" expanded="false" />
-                <element signature="e#1656#1906#0" expanded="false" />
-                <element signature="e#2021#2338#0" expanded="false" />
-                <element signature="e#2408#4014#0" expanded="false" />
-                <element signature="e#4088#4527#0" expanded="false" />
-                <element signature="e#4599#4765#0" expanded="false" />
-                <element signature="e#4877#5407#0" expanded="false" />
-                <element signature="e#5520#6066#0" expanded="false" />
-                <element signature="e#6261#6343#0" expanded="false" />
-                <element signature="e#7273#8467#0" expanded="false" />
-                <element signature="e#8553#9760#0" expanded="false" />
-                <element signature="e#9852#11059#0" expanded="false" />
-                <element signature="e#11152#12932#0" expanded="false" />
-                <element signature="e#13032#15558#0" expanded="false" />
-                <element signature="e#15645#18893#0" expanded="false" />
+                <element signature="n#!!block;n#GetMonthName#0;n#!!block;n#calender#0" expanded="false" />
+                <element signature="n#!!block;n#setMonth#0;n#!!block;n#calender#0" expanded="false" />
+                <element signature="e#1289#1818#0" expanded="false" />
+                <element signature="e#1900#2428#0" expanded="false" />
+                <element signature="n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
+                <element signature="n#!!block;n#getDaysInMonth#0;n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
+                <element signature="n#!!block;n#setDaysInOrder#0;n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
+                <element signature="e#5037#6077#0" expanded="false" />
+                <element signature="n#!!block;n#fetchEventData#0;n#!!block;n#calender#0" expanded="false" />
+                <element signature="e#7666#8914#0" expanded="false" />
+                <element signature="e#8977#9151#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/signin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="185" column="43" selection-start-line="185" selection-start-column="43" selection-end-line="185" selection-end-column="43" />
-              <folding>
-                <element signature="e#56#3131#0#PHP" expanded="false" />
-                <element signature="e#3155#6331#0#PHP" expanded="false" />
-                <element signature="e#6350#10663#0#PHP" expanded="false" />
-                <marker date="1452720398227" expanded="true" signature="942:997" placeholder="select * fro..user_details..." />
-                <marker date="1452720398227" expanded="true" signature="1276:1333" placeholder="select * fro..user_details..." />
-                <marker date="1452720398227" expanded="true" signature="1591:1652" placeholder="select * fro..user_details..." />
-                <marker date="1452720398227" expanded="true" signature="1597:1652" placeholder="select * fro..user_details..." />
-                <marker date="1452720398227" expanded="true" signature="1912:2191" placeholder="insert into user_details..." />
-                <marker date="1452720398227" expanded="true" signature="2482:2582" placeholder="insert into user_login_info..." />
-                <marker date="1452720398227" expanded="true" signature="4070:4138" placeholder="select * fro..user_details..." />
-                <marker date="1452720398227" expanded="true" signature="4417:4477" placeholder="select * fro..user_details..." />
-                <marker date="1452720398227" expanded="true" signature="4735:4799" placeholder="select * fro..user_details..." />
-                <marker date="1452720398227" expanded="true" signature="5060:5376" placeholder="insert into coord_details..." />
-                <marker date="1452720398227" expanded="true" signature="5060:5379" placeholder="insert into coord_details..." />
-                <marker date="1452720398227" expanded="true" signature="5060:5394" placeholder="insert into coord_details..." />
-                <marker date="1452720398227" expanded="true" signature="5669:5776" placeholder="insert into user_login_info..." />
-                <marker date="1452720398227" expanded="true" signature="9203:9285" placeholder="select group..groep_details..." />
-                <marker date="1452720398227" expanded="true" signature="9622:9647" placeholder="insert into group_details..." />
-                <marker date="1452720398227" expanded="true" signature="9622:9648" placeholder="insert into group_details..." />
-                <marker date="1452720398227" expanded="true" signature="9622:9673" placeholder="insert into group_details..." />
-                <marker date="1452720398227" expanded="true" signature="9622:9674" placeholder="insert into group_details..." />
-                <marker date="1452720398227" expanded="true" signature="9622:9693" placeholder="insert into group_details..." />
-                <marker date="1452720398227" expanded="true" signature="9989:10096" placeholder="insert into user_login_info..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077">
-              <caret line="43" column="101" selection-start-line="43" selection-start-column="101" selection-end-line="43" selection-end-column="101" />
+            <state vertical-scroll-proportion="0.3347826">
+              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
               <folding>
                 <element signature="e#66#468#0#PHP" expanded="false" />
                 <element signature="e#470#974#0#PHP" expanded="false" />
-                <marker date="1452541089067" expanded="true" signature="190:223" placeholder="select * fro..institution_details..." />
-                <marker date="1452541089067" expanded="true" signature="190:254" placeholder="select * fro..institution_details..." />
-                <marker date="1452541089067" expanded="true" signature="634:734" placeholder="select * fro.._details..." />
-                <marker date="1452541089067" expanded="true" signature="1147:1247" placeholder="select * fro..manager_details..." />
+                <element signature="e#976#1484#0#PHP" expanded="false" />
+                <marker date="1452902718158" expanded="true" signature="190:223" placeholder="select * fro..institution_details..." />
+                <marker date="1452902718158" expanded="true" signature="190:254" placeholder="select * fro..institution_details..." />
+                <marker date="1452902718158" expanded="true" signature="634:734" placeholder="select * fro.._details..." />
+                <marker date="1452902718158" expanded="true" signature="1147:1247" placeholder="select * fro..manager_details..." />
+                <marker date="1452902718158" expanded="true" signature="1743:1777" placeholder="select * fro..event_details..." />
+                <marker date="1452902718158" expanded="true" signature="1743:1789" placeholder="select * fro..event_details..." />
+                <marker date="1452902718158" expanded="true" signature="1743:1803" placeholder="select * fro..event_details..." />
+                <marker date="1452902718158" expanded="true" signature="2477:2610" placeholder="select DATE(..event_details..." />
               </folding>
             </state>
           </provider>
@@ -194,26 +158,27 @@
         <option value="chrome-extension://aapbdbdomjkkjkaonfhkkikfgjllcleb/bubble_compiled.js" />
         <option value="$PROJECT_DIR$/data/eventdata.json" />
         <option value="$PROJECT_DIR$/css/sign_modal.css" />
-        <option value="$PROJECT_DIR$/js/simplecalendar.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/calendar_modal.css" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/css/creative.css" />
         <option value="$PROJECT_DIR$/../../php/php-5.6.15-Win32-VC11-x64/php.ini" />
         <option value="$PROJECT_DIR$/php/logout.php" />
         <option value="$PROJECT_DIR$/css/form-elements.css" />
-        <option value="$PROJECT_DIR$/php/function.php" />
         <option value="C:/xampp/htdocs/Robotix/php/function.php" />
         <option value="$PROJECT_DIR$/php/login.php" />
         <option value="$PROJECT_DIR$/css/login_modal.css" />
-        <option value="$PROJECT_DIR$/js/creative.js" />
         <option value="$PROJECT_DIR$/php/conn.php" />
         <option value="dbtable:/e9bd3e39/445110bc-5446-427a-a0ec-da844fc7dd9b/robotix.group_details" />
         <option value="C:/xampp/htdocs/Robotix/php/signin.php" />
         <option value="C:/xampp/htdocs/Robotix/index.php" />
+        <option value="$PROJECT_DIR$/js/creative.js" />
         <option value="$PROJECT_DIR$/php/signin.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/login_modal.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/445110bc-5446-427a-a0ec-da844fc7dd9b/console.sql" />
+        <option value="$PROJECT_DIR$/js/simplecalendar.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/css/calendar_modal.css" />
+        <option value="$PROJECT_DIR$/php/function.php" />
       </list>
     </option>
   </component>
@@ -265,7 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -308,13 +272,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Robotix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Robotix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="font-awesome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Robotix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Robotix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Robotix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Robotix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,16 +421,16 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28084832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28856042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3986577" sideWeight="0.5025707" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20179948" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261745" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252688" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38709676" sideWeight="0.4974293" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -431,8 +438,8 @@
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -450,11 +457,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/simplecalendar.js</url>
-          <line>58</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/simplecalendar.js</url>
           <line>120</line>
@@ -505,32 +507,24 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Re-usable Assets/bootstrap-login-forms/form-3/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#form#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -554,20 +548,19 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#form#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -584,20 +577,19 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#form#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -677,13 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/eventdata.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/portfolio/3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -710,29 +695,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/calendar_modal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../php/php-5.6.15-Win32-VC11-x64/php.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6398305">
           <caret line="1999" column="22" selection-start-line="1999" selection-start-column="22" selection-end-line="1999" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e9bd3e39/445110bc-5446-427a-a0ec-da844fc7dd9b/robotix.user_details">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -761,23 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47341773">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/simplecalendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047419805">
-          <caret line="2" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!block;n#GetMonthName#0;n#!!block;n#calender#0" expanded="false" />
-            <element signature="n#!!block;n#setMonth#0;n#!!block;n#calender#0" expanded="false" />
-            <element signature="e#1289#1818#0" expanded="false" />
-            <element signature="e#1900#2428#0" expanded="false" />
-            <element signature="n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
-            <element signature="n#!!block;n#getDaysInMonth#0;n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
-            <element signature="n#!!block;n#setDaysInOrder#0;n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
-            <element signature="e#5037#6077#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -845,40 +794,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/creative.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7587169">
-          <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/conn.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34442836">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/445110bc-5446-427a-a0ec-da844fc7dd9b/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/e9bd3e39/445110bc-5446-427a-a0ec-da844fc7dd9b/robotix.group_details">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -886,21 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.74626863">
           <caret line="290" column="0" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
-          <folding>
-            <marker date="1452717250217" expanded="true" signature="942:997" placeholder="select * fro..user_details..." />
-            <marker date="1452717250217" expanded="true" signature="1276:1333" placeholder="select * fro..user_details..." />
-            <marker date="1452717250217" expanded="true" signature="1591:1652" placeholder="select * fro..user_details..." />
-            <marker date="1452717250217" expanded="true" signature="1912:2191" placeholder="insert into user_details..." />
-            <marker date="1452717250217" expanded="true" signature="2482:2582" placeholder="insert into user_login_info..." />
-            <marker date="1452717250217" expanded="true" signature="4070:4138" placeholder="select * fro..coord_details..." />
-            <marker date="1452717250217" expanded="true" signature="4417:4477" placeholder="select * fro..coord_details..." />
-            <marker date="1452717250217" expanded="true" signature="4735:4799" placeholder="select * fro..coord_details..." />
-            <marker date="1452717250217" expanded="true" signature="5060:5376" placeholder="insert into coord_details..." />
-            <marker date="1452717250217" expanded="true" signature="5669:5776" placeholder="insert into user_login_info..." />
-            <marker date="1452717250217" expanded="true" signature="9184:9266" placeholder="select group..group_details..." />
-            <marker date="1452717250217" expanded="true" signature="9603:9654" placeholder="insert into group_details..." />
-            <marker date="1452717250217" expanded="true" signature="9970:10077" placeholder="insert into user_login_info..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -908,11 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.042288557">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <marker date="1452204969898" expanded="true" signature="190:254" placeholder="select * fro..institution_details..." />
-            <marker date="1452204969898" expanded="true" signature="634:734" placeholder="select * fro..coord_details..." />
-            <marker date="1452204969898" expanded="true" signature="1147:1247" placeholder="select * fro..manager_details..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -920,84 +831,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.042288557">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077">
-          <caret line="43" column="101" selection-start-line="43" selection-start-column="101" selection-end-line="43" selection-end-column="101" />
-          <folding>
-            <element signature="e#66#468#0#PHP" expanded="false" />
-            <element signature="e#470#974#0#PHP" expanded="false" />
-            <marker date="1452541089067" expanded="true" signature="190:223" placeholder="select * fro..institution_details..." />
-            <marker date="1452541089067" expanded="true" signature="190:254" placeholder="select * fro..institution_details..." />
-            <marker date="1452541089067" expanded="true" signature="634:734" placeholder="select * fro.._details..." />
-            <marker date="1452541089067" expanded="true" signature="1147:1247" placeholder="select * fro..manager_details..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/signin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="185" column="43" selection-start-line="185" selection-start-column="43" selection-end-line="185" selection-end-column="43" />
+        <state vertical-scroll-proportion="-20.0">
+          <caret line="287" column="10" selection-start-line="287" selection-start-column="10" selection-end-line="287" selection-end-column="10" />
           <folding>
-            <element signature="e#56#3131#0#PHP" expanded="false" />
-            <element signature="e#3155#6331#0#PHP" expanded="false" />
-            <element signature="e#6350#10663#0#PHP" expanded="false" />
-            <marker date="1452720398227" expanded="true" signature="942:997" placeholder="select * fro..user_details..." />
-            <marker date="1452720398227" expanded="true" signature="1276:1333" placeholder="select * fro..user_details..." />
-            <marker date="1452720398227" expanded="true" signature="1591:1652" placeholder="select * fro..user_details..." />
-            <marker date="1452720398227" expanded="true" signature="1597:1652" placeholder="select * fro..user_details..." />
-            <marker date="1452720398227" expanded="true" signature="1912:2191" placeholder="insert into user_details..." />
-            <marker date="1452720398227" expanded="true" signature="2482:2582" placeholder="insert into user_login_info..." />
-            <marker date="1452720398227" expanded="true" signature="4070:4138" placeholder="select * fro..user_details..." />
-            <marker date="1452720398227" expanded="true" signature="4417:4477" placeholder="select * fro..user_details..." />
-            <marker date="1452720398227" expanded="true" signature="4735:4799" placeholder="select * fro..user_details..." />
-            <marker date="1452720398227" expanded="true" signature="5060:5376" placeholder="insert into coord_details..." />
-            <marker date="1452720398227" expanded="true" signature="5060:5379" placeholder="insert into coord_details..." />
-            <marker date="1452720398227" expanded="true" signature="5060:5394" placeholder="insert into coord_details..." />
-            <marker date="1452720398227" expanded="true" signature="5669:5776" placeholder="insert into user_login_info..." />
-            <marker date="1452720398227" expanded="true" signature="9203:9285" placeholder="select group..groep_details..." />
-            <marker date="1452720398227" expanded="true" signature="9622:9647" placeholder="insert into group_details..." />
-            <marker date="1452720398227" expanded="true" signature="9622:9648" placeholder="insert into group_details..." />
-            <marker date="1452720398227" expanded="true" signature="9622:9673" placeholder="insert into group_details..." />
-            <marker date="1452720398227" expanded="true" signature="9622:9674" placeholder="insert into group_details..." />
-            <marker date="1452720398227" expanded="true" signature="9622:9693" placeholder="insert into group_details..." />
-            <marker date="1452720398227" expanded="true" signature="9989:10096" placeholder="insert into user_login_info..." />
+            <element signature="e#56#3153#0#PHP" expanded="false" />
+            <element signature="e#3177#6375#0#PHP" expanded="false" />
+            <marker date="1452889182359" expanded="true" signature="942:997" placeholder="select * fro..user_details..." />
+            <marker date="1452889182359" expanded="true" signature="1276:1333" placeholder="select * fro..user_details..." />
+            <marker date="1452889182359" expanded="true" signature="1591:1652" placeholder="select * fro..user_details..." />
+            <marker date="1452889182359" expanded="true" signature="1597:1652" placeholder="select * fro..user_details..." />
+            <marker date="1452889182359" expanded="true" signature="1912:2191" placeholder="insert into user_details..." />
+            <marker date="1452889182359" expanded="true" signature="2482:2582" placeholder="insert into user_login_info..." />
+            <marker date="1452889182359" expanded="true" signature="4092:4160" placeholder="select * fro..user_details..." />
+            <marker date="1452889182359" expanded="true" signature="4439:4499" placeholder="select * fro..user_details..." />
+            <marker date="1452889182359" expanded="true" signature="4757:4821" placeholder="select * fro..user_details..." />
+            <marker date="1452889182359" expanded="true" signature="5082:5398" placeholder="insert into coord_details..." />
+            <marker date="1452889182359" expanded="true" signature="5082:5401" placeholder="insert into coord_details..." />
+            <marker date="1452889182359" expanded="true" signature="5082:5416" placeholder="insert into coord_details..." />
+            <marker date="1452889182359" expanded="true" signature="5691:5798" placeholder="insert into user_login_info..." />
+            <marker date="1452889182359" expanded="true" signature="9247:9329" placeholder="select group..groep_details..." />
+            <marker date="1452889182359" expanded="true" signature="9666:9691" placeholder="insert into group_details..." />
+            <marker date="1452889182359" expanded="true" signature="9666:9692" placeholder="insert into group_details..." />
+            <marker date="1452889182359" expanded="true" signature="9666:9717" placeholder="insert into group_details..." />
+            <marker date="1452889182359" expanded="true" signature="9666:9718" placeholder="insert into group_details..." />
+            <marker date="1452889182359" expanded="true" signature="9666:9737" placeholder="insert into group_details..." />
+            <marker date="1452889182359" expanded="true" signature="10033:10140" placeholder="insert into user_login_info..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="dbDummy://dbtable:/e9bd3e39/445110bc-5446-427a-a0ec-da844fc7dd9b/robotix.user_details">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/creative.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.384615">
-          <caret line="567" column="77" selection-start-line="567" selection-start-column="77" selection-end-line="567" selection-end-column="77" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#form#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.64385474">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e9bd3e39/445110bc-5446-427a-a0ec-da844fc7dd9b/robotix.event_details">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/login_modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77648765">
-          <caret line="209" column="69" selection-start-line="209" selection-start-column="69" selection-end-line="209" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="241" column="16" selection-start-line="235" selection-start-column="12" selection-end-line="241" selection-end-column="16" />
           <folding>
             <element signature="e#136#388#0" expanded="false" />
             <element signature="e#442#690#0" expanded="false" />
@@ -1011,12 +916,98 @@
             <element signature="e#4877#5407#0" expanded="false" />
             <element signature="e#5520#6066#0" expanded="false" />
             <element signature="e#6261#6343#0" expanded="false" />
-            <element signature="e#7273#8467#0" expanded="false" />
-            <element signature="e#8553#9760#0" expanded="false" />
-            <element signature="e#9852#11059#0" expanded="false" />
-            <element signature="e#11152#12932#0" expanded="false" />
-            <element signature="e#13032#15558#0" expanded="false" />
-            <element signature="e#15645#18893#0" expanded="false" />
+            <element signature="e#6375#7245#0" expanded="false" />
+            <element signature="e#8615#9822#0" expanded="false" />
+            <element signature="e#9914#11121#0" expanded="false" />
+            <element signature="e#11214#13083#0" expanded="false" />
+            <element signature="e#13183#15798#0" expanded="false" />
+            <element signature="e#15885#19240#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/eventdata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/445110bc-5446-427a-a0ec-da844fc7dd9b/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/calendar_modal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.92435706">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8545456">
+          <caret line="432" column="45" selection-start-line="432" selection-start-column="45" selection-end-line="432" selection-end-column="45" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/simplecalendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#GetMonthName#0;n#!!block;n#calender#0" expanded="false" />
+            <element signature="n#!!block;n#setMonth#0;n#!!block;n#calender#0" expanded="false" />
+            <element signature="e#1289#1818#0" expanded="false" />
+            <element signature="e#1900#2428#0" expanded="false" />
+            <element signature="n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
+            <element signature="n#!!block;n#getDaysInMonth#0;n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
+            <element signature="n#!!block;n#setDaysInOrder#0;n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
+            <element signature="e#5037#6077#0" expanded="false" />
+            <element signature="n#!!block;n#fetchEventData#0;n#!!block;n#calender#0" expanded="false" />
+            <element signature="e#7666#8914#0" expanded="false" />
+            <element signature="e#8977#9151#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3347826">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+          <folding>
+            <element signature="e#66#468#0#PHP" expanded="false" />
+            <element signature="e#470#974#0#PHP" expanded="false" />
+            <element signature="e#976#1484#0#PHP" expanded="false" />
+            <marker date="1452902718158" expanded="true" signature="190:223" placeholder="select * fro..institution_details..." />
+            <marker date="1452902718158" expanded="true" signature="190:254" placeholder="select * fro..institution_details..." />
+            <marker date="1452902718158" expanded="true" signature="634:734" placeholder="select * fro.._details..." />
+            <marker date="1452902718158" expanded="true" signature="1147:1247" placeholder="select * fro..manager_details..." />
+            <marker date="1452902718158" expanded="true" signature="1743:1777" placeholder="select * fro..event_details..." />
+            <marker date="1452902718158" expanded="true" signature="1743:1789" placeholder="select * fro..event_details..." />
+            <marker date="1452902718158" expanded="true" signature="1743:1803" placeholder="select * fro..event_details..." />
+            <marker date="1452902718158" expanded="true" signature="2477:2610" placeholder="select DATE(..event_details..." />
           </folding>
         </state>
       </provider>

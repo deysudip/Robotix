@@ -422,18 +422,22 @@ if (isset($_SESSION['logged_user'])) {
                 <div class="list-event">
                     <div class="day-event">
                         <a href="#" class="close fontawesome-remove" data-dismiss="modal"></a>
-                        <h2 class="title">Lorem ipsum 1</h2>
-                        <p class="date"><b>2014-12-16</b></p>
-                        <p class="details">Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                        <h2 class="title" id="event_title">Lorem ipsum 1</h2>
+                        <p class="date" id="event_date"><b>2014-12-16</b></p>
+                        <p class="details" id="event_details">Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                        <p class="details" id="event_insti"><b>Venue:</b> <span></span></p>
+                        <p class="details" id="event_min"><b>Min No of Participant:</b> <span></span></p>
+                        <p class="details" id="event_max"><b>Max No of Participant:</b> <span></span></p>
+                        <p class="details" id="event_type"><b>Type:</b> <span></span></p>
                         <label class="sign-up">
-                            <span>Sign Up for this Event!</span>
+                            <span id="reg-btn">Register for this Event!</span>
                         </label>
                     </div>
                 </div>
             </div>
-            <div class="calender-footer">
+            <!--<div class="calender-footer">
                 sfdagdsgsh
-            </div>
+            </div>-->
          </div>
     </div>
 
@@ -638,7 +642,35 @@ if (isset($_SESSION['logged_user'])) {
         </div>
     </div>
 
+    <!-- sign up confirmation modal -->
+    <div id="sign-conf" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="login-modal" id="sign-conf-modal">
+                <div class="form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>Roboniche.in</h3>
+                        </div>
+                        <div class="form-top-right">
+                            <i class="fa fa-times" data-dismiss="modal"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div style="color: #fff">
+                        <h4>Welcome to Roboniche ! You have signed up successfully!</h4>
+                        <h4>Please <a href="#login">login here</a> using your credential.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- jQuery -->
+
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->

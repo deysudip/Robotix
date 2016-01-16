@@ -202,8 +202,9 @@ jQuery(document).ready(function() {
 			if ($(this).val() == ""||$(this).val() == null) {
 				$(this).addClass('input-error');
 				$check=false;
-				var err_field=this;
 
+				// only to show error for group sign up in member section
+				var err_field=this;
 				if($(err_field).parent().parent().hasClass('form-group-sub')){
 					var member = $(err_field).closest(".form-group-sub").attr('id');
 					var mem_num = $(err_field).closest(".form-group-sub").attr('member');
@@ -376,7 +377,9 @@ jQuery(document).ready(function() {
 				async: false,
 				success: function (html) {
 					if (html == '') {
-						window.location.href = "index.php";
+						$('#sign').modal('hide');
+                        $('#sign-conf').modal('show');
+                        e.preventDefault();
 					}
 					else {
 						$err_msg = html;
@@ -426,7 +429,9 @@ jQuery(document).ready(function() {
                 async: false,
                 success: function (html) {
                     if (html == '') {
-                        window.location.href = "index.php";
+                        $('#sign').modal('hide');
+                        $('#sign-conf').modal('show');
+                        e.preventDefault();
                     }
                     else {
                         $err_msg = html;
@@ -503,7 +508,9 @@ jQuery(document).ready(function() {
 				async: false,
 				success: function (html) {
 					if (html == '') {
-						window.location.href = "index.php";
+                        $('#sign').modal('hide');
+                        $('#sign-conf').modal('show');
+                        e.preventDefault();
 					}
 					else {
 						$err_msg = html;

@@ -150,15 +150,23 @@ function calender(){
     function fetchEventData(){
         var viewMonth = $('.month').attr('data-month');
         var viewYear = $('.month').attr('data-year');
-        $.getJSON( "data/eventdata.json", function( data ) {
-           $.each(data.events, function(i){
-                if((viewYear==data.events[i].year)&&(viewMonth==data.events[i].month)){
-                    $('tbody.event-calendar td[date-day="' + data.events[i].date + '"]').addClass('event');
-                }
-            })
+        var data = 'current_year=' + viewYear + '&current_month=' + viewMonth + '&req_type=event_date';
 
-        })
-    };
+        $.ajax({
+            type: "POST",
+            url: "php/function.php",
+            data: data,
+            dataType: 'json',
+            async: false,
+            success: function (data) {
+                $.each(data, function(i){
+                    var day = data[i].event_day;
+                    $('tbody.event-calendar td[date-day="' + day + '"]').addClass('event');
+                })
+
+            }
+        });
+    }
 
     /**
      * Get current day and set as '.current-day'
@@ -213,17 +221,36 @@ function calender(){
     });
 
     function fetchEventDetails(eventDay,eventMonth,eventYear){
-        $.getJSON( "data/eventdata.json", function( data ) {
-            $.each(data.events, function(i){
-                if((eventYear==data.events[i].year)&&(eventMonth==data.events[i].month)&&(eventDay==data.events[i].date)){
-                    $('.day-event h2.title').html(data.events[i].event_title);
-                    $('.day-event p.date').html(data.events[i].date + '-' + data.events[i].month + '-' + data.events[i].year);
-                    $('.day-event p.details').html(data.events[i].desc);
-                    $('.day-event').attr('event-id',data.events[i].event_id);
-                }
-            })
 
-        })
-    };
+        var data = 'current_year=' + eventYear + '&current_month=' + eventMonth + '&current_day=' + eventDay + '&req_type=event_details';
+        $.ajax({
+            type: "POST",
+            url: "php/function.php",
+            data: data,
+            dataType: 'json',
+            async: false,
+            success: function (data) {
+                $.each(data, function(i){
+                    $('#event_title').html(data[i].event_title);
+                    $('#event_date').html(data[i].event_date);
+                    $('#event_details').html(data[i].event_desc);
+                    $('#event_insti').find('span').html(data[i].event_insti);
+                    $('#event_min').find('span').html(data[i].event_min);
+                    $('#event_max').find('span').html(data[i].event_max);
+                    $('.day-event').attr('event-id',data[i].event_code);
+                    var event_uni_flag = data[i].event_uni_flag;
+                    if (event_uni_flag=='Y'){
+                        $('#event_type').find('span').html("This event is open to all.");
+                    }
+                    else if(event_uni_flag=='N'){
+                        $('#event_type').find('span').html("This event is only for organizing instituition.");
+                    }
 
- };
+                })
+
+            }
+        });
+
+    }
+
+ }

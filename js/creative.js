@@ -69,7 +69,13 @@
     $('.modal').on('hidden.bs.modal', function (e) {
         $(this).find("input:not([readonly]),textarea,select").val('').end();
         $(this).find(".err-msg").css('display', 'none');
-    })
+    });
+
+    $(".form-bottom a[href='#login']").on('click', function(e){
+        $('#sign-conf').modal('hide');
+        $('#login').modal('show');
+    });
+
 
 
 
