@@ -1,8 +1,6 @@
-
 jQuery(document).ready(function() {
 
-
-	/* select and show sign-up and login tab */
+	/* select and show different user sign-up and login tab */
 
 	$(".login-option ul li").on('click', function (e) {
 		$(this).siblings().removeClass('selected');
@@ -222,7 +220,7 @@ jQuery(document).ready(function() {
 	}
 
 	// single user login
-	$("button:submit[name=user-login-btn]").on('click', function (e) {
+	$("button[name=user-login-btn]").on('click', function (e) {
 
         $parent = $(this).parent();
         var check = checkForm($parent);
@@ -240,8 +238,9 @@ jQuery(document).ready(function() {
 				async: false,
 				success: function (html) {
 					if (html == '') {
-						window.location.href = "index.php";
-					}
+                        e.preventDefault();
+                        window.location.href = "index.php";
+                    }
 					else {
 						$err_msg = html;
 						$(".user-login .err-msg").css('display', 'inline', 'important');
@@ -265,7 +264,7 @@ jQuery(document).ready(function() {
 	});
 
 	//group login
-	$("button:submit[name=group-login-btn]").on('click', function (e) {
+	$("button[name=group-login-btn]").on('click', function (e) {
 		$parent = $(this).parent();
 
 		var check = checkForm($parent);
@@ -308,7 +307,7 @@ jQuery(document).ready(function() {
 	});
 
 	//coordinator login
-	$("button:submit[name=coord-login-btn]").on('click', function (e) {
+	$("button[name=coord-login-btn]").on('click', function (e) {
 		$parent = $(this).parent();
 
 		var check = checkForm($parent);
@@ -351,7 +350,7 @@ jQuery(document).ready(function() {
 	});
 
 	// single user sign-up
-	$("button:submit[name=user-sign-btn]").on('click', function (e) {
+	$("button[name=user-sign-btn]").on('click', function (e) {
 
         $(".user-sign .err-msg").css('display', 'none');
 		$parent = $(this).parent();
@@ -377,8 +376,8 @@ jQuery(document).ready(function() {
 				async: false,
 				success: function (html) {
 					if (html == '') {
-						$('#sign').modal('hide');
-                        $('#sign-conf').modal('show');
+						$('.modal').modal('hide').delay(1000);
+                        $('#sign-conf').modal('show').delay(100);
                         e.preventDefault();
 					}
 					else {
@@ -404,7 +403,7 @@ jQuery(document).ready(function() {
 	});
 
     // coordinator sign-up
-    $("button:submit[name=coord-sign-btn]").on('click', function (e) {
+    $("button[name=coord-sign-btn]").on('click', function (e) {
 		$(".coord-sign .err-msg").css('display', 'none');
         $parent = $(this).parent();
         var check = checkForm($parent);
@@ -429,7 +428,7 @@ jQuery(document).ready(function() {
                 async: false,
                 success: function (html) {
                     if (html == '') {
-                        $('#sign').modal('hide');
+                        $('.modal').modal('hide');
                         $('#sign-conf').modal('show');
                         e.preventDefault();
                     }
@@ -456,7 +455,7 @@ jQuery(document).ready(function() {
     });
 
 	// group sign-up
-	$("button:submit[name=group-sign-btn]").on('click', function (e){
+	$("button[name=group-sign-btn]").on('click', function (e){
 		$(".group-sign .err-msg").css('display', 'none');
 		$parent = $(this).parent();
 		var check = checkForm($parent);
@@ -508,7 +507,7 @@ jQuery(document).ready(function() {
 				async: false,
 				success: function (html) {
 					if (html == '') {
-                        $('#sign').modal('hide');
+                        $('.modal').modal('hide');
                         $('#sign-conf').modal('show');
                         e.preventDefault();
 					}

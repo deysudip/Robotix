@@ -1,7 +1,14 @@
+<?php
+session_start();
+?>
+<?php header("Content-type: application/javascript"); ?>
+
+
 $('a[href=#event-cal-modal]').bind('click', function(){
   calender();
 });
 
+//var err_msg = '';
 function calender(){
 
     var mon = 'Mon';
@@ -41,33 +48,39 @@ function calender(){
 
     $(".btn-next").unbind('click');
     $('.btn-next').on('click', function() {
-      var monthNumber = $('.month').attr('data-month');
-      var yearNumber = $('.month').attr('data-year');
-      if (monthNumber > 11) {
-        $('.month').attr('data-month', '0');
+        $('.list-event').css('display','none');
+        $('.calendar-container').css({'width': '510px', 'left': '50%'});
+        $('.calendar').css({'width':'100%'});
         var monthNumber = $('.month').attr('data-month');
-        setMonth(parseInt(monthNumber) + 1, parseInt(yearNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
-        fetchEventData();
-      } else {
+        var yearNumber = $('.month').attr('data-year');
+        if (monthNumber > 11) {
+            $('.month').attr('data-month', '0');
+            var monthNumber = $('.month').attr('data-month');
+            setMonth(parseInt(monthNumber) + 1, parseInt(yearNumber) + 1, mon, tue, wed, thur, fri, sat, sund);
+            fetchEventData();
+        } else {
 
-        setMonth(parseInt(monthNumber) + 1, yearNumber, mon, tue, wed, thur, fri, sat, sund);
-        fetchEventData();
-      };
+            setMonth(parseInt(monthNumber) + 1, yearNumber, mon, tue, wed, thur, fri, sat, sund);
+            fetchEventData();
+          };
     });
 
     $(".btn-prev").unbind('click');
     $('.btn-prev').on('click', function() {
-      var monthNumber = $('.month').attr('data-month');
-      var yearNumber = $('.month').attr('data-year');
-      if (monthNumber < 2) {
-        $('.month').attr('data-month', '13');
+        $('.list-event').css('display','none');
+        $('.calendar-container').css({'width': '510px', 'left': '50%'});
+        $('.calendar').css({'width':'100%'});
         var monthNumber = $('.month').attr('data-month');
-        setMonth(parseInt(monthNumber) - 1, parseInt(yearNumber) - 1, mon, tue, wed, thur, fri, sat, sund);
-        fetchEventData();
-      } else {
-        setMonth(parseInt(monthNumber) - 1, yearNumber, mon, tue, wed, thur, fri, sat, sund);
-        fetchEventData();
-      };
+        var yearNumber = $('.month').attr('data-year');
+        if (monthNumber < 2) {
+            $('.month').attr('data-month', '13');
+            var monthNumber = $('.month').attr('data-month');
+            setMonth(parseInt(monthNumber) - 1, parseInt(yearNumber) - 1, mon, tue, wed, thur, fri, sat, sund);
+            fetchEventData();
+        } else {
+            setMonth(parseInt(monthNumber) - 1, yearNumber, mon, tue, wed, thur, fri, sat, sund);
+            fetchEventData();
+        };
     });
 
 
@@ -231,18 +244,20 @@ function calender(){
             async: false,
             success: function (data) {
                 $.each(data, function(i){
-                    $('#event_title').html(data[i].event_title);
-                    $('#event_date').html(data[i].event_date);
-                    $('#event_details').html(data[i].event_desc);
-                    $('#event_insti').find('span').html(data[i].event_insti);
+                    $('#event_title').find('span').html(data[i].event_title);
+                    $('#event_date').find('span').html(data[i].event_date);
+                    $('#event_details').find('span').html(data[i].event_desc);
+                    $('#event_insti_name').find('span').html(data[i].event_insti_name);
+                    $('#event_insti_code').find('span').html(data[i].event_insti_code);
                     $('#event_min').find('span').html(data[i].event_min);
                     $('#event_max').find('span').html(data[i].event_max);
+                    $('#event_insti_flag').find('span').html(data[i].event_insti_flag);
                     $('.day-event').attr('event-id',data[i].event_code);
-                    var event_uni_flag = data[i].event_uni_flag;
-                    if (event_uni_flag=='Y'){
+                    var event_insti_flag = data[i].event_insti_flag;
+                    if (event_insti_flag=='Y'){
                         $('#event_type').find('span').html("This event is open to all.");
                     }
-                    else if(event_uni_flag=='N'){
+                    else if(event_insti_flag=='N'){
                         $('#event_type').find('span').html("This event is only for organizing instituition.");
                     }
 
@@ -253,4 +268,127 @@ function calender(){
 
     }
 
+    // Register for an event
+    $('#reg-btn').unbind('click');
+    $('#reg-btn').on('click',function(){
+        register();
+    });
+
+    //check for registering in an event
+    function register(){
+        var flag = true;
+        var event_date = $('#event_date').find('span').text();
+        event_date = new Date(event_date);
+        event_date = event_date.setHours(0,0,0,0);
+        var event_min = $('#event_min').find('span').text();
+        var event_max = $('#event_max').find('span').text();
+        event_min = parseInt(event_min,10);
+        event_max = parseInt(event_max,10);
+        var event_code = $('.day-event').attr('event-id');
+        var event_insti_code = $('#event_insti_code').find('span').text();
+        var event_insti_flag = $('#event_insti_flag').find('span').text();
+        var signed_user = "<?php if(isset($_SESSION['logged_user'])) {echo ($_SESSION['logged_user']);}?>";
+        var login_type = "<?php if(isset($_SESSION['login_type'])) {echo ($_SESSION['login_type']);}?>";
+        var login_insti = "<?php if(isset($_SESSION['logged_user_insti'])) {echo ($_SESSION['logged_user_insti']);}?>";
+        var current_date = new Date();
+        current_date = current_date.setHours(0,0,0,0);
+
+
+        if (signed_user ==''){
+            $('#bad-reg').find('h4#line1').html('Sorry!! You are not logged in.');
+            //$('#bad-reg').find('h4#line2').html('Please <a data-dismiss="modal" data-toggle="modal" href="#login">login here</a> using your credential.');
+            $('#bad-reg').modal('show').delay(100);
+        }
+        else{
+            if(event_date<current_date){
+                flag = false;
+                $('#bad-reg').find('h4#line1').html('Sorry!! You can not register for past dated event.');
+                $('#bad-reg').modal('show').delay(100);
+            }
+            if (flag && (login_type == 'user')){
+
+                if (event_min != 1 && flag){
+                    flag = false;
+                    $('#bad-reg').find('h4#line1').html('Sorry!! Single users can not participate in this event.');
+                    $('#bad-reg').modal('show').delay(100);
+                }
+                if (flag && login_insti!=event_insti_code && event_insti_flag!='Y'){
+                    flag = false;
+                    $('#bad-reg').find('h4#line1').html('Sorry!! This event is only for organizing instituition.');
+                    $('#bad-reg').modal('show').delay(100);
+                }
+
+                if (flag){
+                    registerEvent(signed_user,login_type,event_code);
+                    if (err_msg == ''){
+                        $('#good-reg').find('h4#line1').html('You choose to register in the event <b>' + $('#event_title').text() + '</b> as a single participant.');
+                        $('#good-reg').find('h4#line2').html('Please contact your coordinator for activating your registration.');
+                        $('#good-reg').modal('show').delay(100);
+                    }
+                    else{
+                        $('#bad-reg').find('h4#line1').html(err_msg);
+                        $('#bad-reg').modal('show').delay(100);
+                    }
+                }
+            }
+            else if( falg && (login_type == 'group')){
+
+                var group_strength = "<?php if(isset($_SESSION['group_strength'])) {echo ($_SESSION['group_strength']);}?>";
+
+                if (flag &&(group_strength<event_min || group_strength>event_max)) {
+                    flag = false;
+                    $('#bad-reg').find('h4#line1').html('Sorry!! Group member count does not meet the criteria.');
+                    $('#bad-reg').modal('show').delay(100);
+                }
+                if (flag && login_insti!=event_insti_code && event_insti_flag!='Y'){
+                    flag = false;
+                    $('#bad-reg').find('h4#line1').html('Sorry!! This event is only for organizing instituition.');
+                    $('#bad-reg').modal('show').delay(100);
+                }
+
+                if(flag){
+                    registerEvent(signed_user,login_type,event_code);
+                    if(err_msg == ''){
+                        $('#good-reg').find('h4#line1').html('You choose to register in the event <b>' + $('#event_title').text() + '</b> as a group"');
+                        $('#good-reg').find('h4#line2').html('Please contact your coordinator for activating your registration.');
+                        $('#good-reg').modal('show').delay(100);
+                    }
+                    else{
+                        $('#bad-reg').find('h4#line1').html(err_msg);
+                        //err_msg = '';
+                        $('#bad-reg').modal('show').delay(100);
+                    }
+
+                }
+            }
+            else if( flag && (login_type == 'coord')){
+                $('#bad-reg').find('h4#line1').html('Sorry!! You can not register as a coordinator');
+                $('#bad-reg').modal('show').delay(100);
+            }
+
+        }
+    }
+
+    // update registration table
+    function registerEvent(signed_user,login_type,event_code){
+        var data = "username=" + signed_user + "&login_type=" + login_type + "&event_code=" + event_code + "&req_type=register";
+
+        $.ajax({
+            type: "POST",
+            url: "php/function.php",
+            data: data,
+            async: false,
+            success: function (html) {
+                if (html != '') {
+                    err_msg = html;
+                }
+                else err_msg = '';
+            },
+            error: function(){
+                err_msg = 'Sorry! An error occurred. Please try again later';
+            }
+
+        });
+
+    }
  }

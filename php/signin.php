@@ -80,11 +80,6 @@ if($_POST['signin_type']=="user_signin"){
     if($check){
         mysqli_commit($conn);
         mysqli_close($conn);
-        /*
-        session_start();
-        $_SESSION['logged_user']=$user_name;
-        $_SESSION['login_type']=$type;
-        */
     }
     else{
         mysqli_rollback($conn);
@@ -173,11 +168,6 @@ if($_POST['signin_type']=="coord_signin"){
     if($check){
         mysqli_commit($conn);
         mysqli_close($conn);
-        /*
-        session_start();
-        $_SESSION['logged_user']=$coord_user_name;
-        $_SESSION['login_type']=$type;
-        */
     }
     else{
         mysqli_rollback($conn);
@@ -281,11 +271,6 @@ if($_POST['signin_type']=="group_signin") {
     if($check){
         mysqli_commit($conn);
         mysqli_close($conn);
-        /*
-        session_start();
-        $_SESSION['logged_user']=$group_user_name;
-        $_SESSION['login_type']=$type;
-        */
     }
     else{
         mysqli_rollback($conn);

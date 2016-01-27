@@ -60,7 +60,12 @@ img { max-width: 100%; }
 	background: #444;
 	background: rgba(0, 0, 0, 0.95);
 	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
-	text-align: left;
+	text-align: center;
+	color: inherit;
+}
+
+.login-modal .form-middle {
+	color: #fff;
 }
 
 .login-modal .form-middle ul{
@@ -95,7 +100,7 @@ img { max-width: 100%; }
 	/*background-color: rgba(134, 134, 134, 0.68);*/
 }
 .login-modal .form-bottom {
-	padding: 5px 25px 30px 25px;
+	padding: 5px 25px 15px 25px;
 	background: #444;
 	background: rgba(0, 0, 0, 0.95);
 	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;

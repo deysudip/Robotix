@@ -84,7 +84,7 @@ session_start();
 if (!isset($_SESSION['logged_user'])){
 ?>
                     <li>
-                        <a data-toggle="modal" href="#login">Log In</a>
+                        <a href="#login" data-toggle="modal">Log In</a>
                     </li>
 <?php
 }
@@ -95,8 +95,8 @@ if (isset($_SESSION['logged_user'])) {
                         <a class="page-scroll dropdown-toggle " data-toggle="dropdown" href="#"><?php echo($_SESSION['logged_user'])?>
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Submenu 1-1</a></li>
-                            <li><a href="#">Submenu 1-2</a></li>
+                            <li><a href="user_dashboard.php">Dashboard</a></li>
+                            <!--<li><a href="#">Submenu 1-2</a></li>-->
                             <li><a href="php/logout.php">Logout</a></li>
                         </ul>
                     </li>
@@ -117,9 +117,9 @@ if (isset($_SESSION['logged_user'])) {
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>WELCOME TO ROBONICHE</h1>
+                <h2>Will robots inherit the <i class="fa fa-var-globe fa-3x wow bounceIn" data-wow-delay=".1s"></i>earth?</h2> Yes, but they will be our children.
                 <hr>
-                <p>Your one step solution to all ROBOTICS Workshop!</p>
+                <p><h1>WELCOME TO ROBONICHE</h1>Keep Calm and build robots Your one step solution to all ROBOTICS Workshop!</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
@@ -131,7 +131,7 @@ if (isset($_SESSION['logged_user'])) {
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading"> We've got what you need!</h2>
                     <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                    <p class="text-faded">Hello there! It seems you are not entirely sure about "WHAT" "WHY" "HOW" of ROBOTICS</p>
                     <a class="btn btn-default btn-xl" data-toggle="modal" href="#sign">Get Started!</a>
                 </div>
             </div>
@@ -301,7 +301,8 @@ if (isset($_SESSION['logged_user'])) {
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:info@roboniche.in">info@roboniche.in </a> / <a href="mailto:support@roboniche.in">support@roboniche.in</a></p>
+
                 </div>
             </div>
         </div>
@@ -354,7 +355,7 @@ if (isset($_SESSION['logged_user'])) {
                             <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="password" >
                         </div>
 
-                        <button type="submit" class="btn" name="user-login-btn">Sign in!</button>
+                        <button class="btn" name="user-login-btn">Sign in!</button>
                     </form>
                 </div>
                 <div class="form-bottom group-login">
@@ -370,7 +371,7 @@ if (isset($_SESSION['logged_user'])) {
                             <label class="sr-only" for="group-password">Password</label>
                             <input type="password" name="group-password" placeholder="Group Password..." class="form-password form-control" id="group-password">
                         </div>
-                        <button type="submit" class="btn" name="group-login-btn">Sign in!</button>
+                        <button class="btn" name="group-login-btn">Sign in!</button>
                     </form>
                 </div>
                 <div class="form-bottom coord-login">
@@ -386,8 +387,11 @@ if (isset($_SESSION['logged_user'])) {
                             <label class="sr-only" for="coord-password">Password</label>
                             <input type="password" name="coord-password" placeholder="Coordinator Password..." class="form-password form-control" id="coord-password">
                         </div>
-                        <button type="submit" class="btn" name="coord-login-btn">Sign in!</button>
+                        <button class="btn" name="coord-login-btn">Sign in!</button>
                     </form>
+                </div>
+                <div class="form-middle">
+                    <h4>New User? <a data-dismiss="modal" data-toggle="modal" href="#sign" >Sign Up</a> here now!</h4>
                 </div>
             </div>
 
@@ -422,13 +426,15 @@ if (isset($_SESSION['logged_user'])) {
                 <div class="list-event">
                     <div class="day-event">
                         <a href="#" class="close fontawesome-remove" data-dismiss="modal"></a>
-                        <h2 class="title" id="event_title">Lorem ipsum 1</h2>
-                        <p class="date" id="event_date"><b>2014-12-16</b></p>
-                        <p class="details" id="event_details">Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
-                        <p class="details" id="event_insti"><b>Venue:</b> <span></span></p>
+                        <h2 class="title" id="event_title"><span>Lorem ipsum 1</span></h2>
+                        <p class="date" id="event_date"><b><span>2014-12-16</span></b></p>
+                        <p class="details" id="event_details"><span>Lorem Ipsum</span> </p>
+                        <p class="details" id="event_insti_name"><b>Venue:</b> <span></span></p>
                         <p class="details" id="event_min"><b>Min No of Participant:</b> <span></span></p>
                         <p class="details" id="event_max"><b>Max No of Participant:</b> <span></span></p>
                         <p class="details" id="event_type"><b>Type:</b> <span></span></p>
+                        <p class="details" id="event_insti_code" hidden><b>Instituition Code:</b> <span></span></p>
+                        <p class="details" id="event_insti_flag" hidden><b>Instituition Flag:</b> <span></span></p>
                         <label class="sign-up">
                             <span id="reg-btn">Register for this Event!</span>
                         </label>
@@ -513,7 +519,7 @@ if (isset($_SESSION['logged_user'])) {
                                 <option disabled selected value="">Select Your Coordinator..</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn" name="user-sign-btn">Sign Up!</button>
+                        <button class="btn" name="user-sign-btn" >Sign Up!</button>
                     </form>
                 </div>
 
@@ -591,7 +597,7 @@ if (isset($_SESSION['logged_user'])) {
                                 <a class="btn-minus-mem fa fa-minus-circle" href="#" title="Delete last member"></a>
                             </header>
                         </div>
-                        <button type="submit" form="group-sign" class="btn" name="group-sign-btn">SIGN UP AS A TEAM!</button>
+                        <button form="group-sign" class="btn" name="group-sign-btn">SIGN UP AS A TEAM!</button>
                     </form>
                 </div>
 
@@ -634,11 +640,14 @@ if (isset($_SESSION['logged_user'])) {
                                 <option disabled selected value="">Select Your Relationship Manager..</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn" name="coord-sign-btn">SIGN UP AS A COORDINATOR!</button>
+                        <button class="btn" name="coord-sign-btn">SIGN UP AS A COORDINATOR!</button>
                     </form>
                 </div>
-            </div>
 
+                <div class="form-middle">
+                    <h4>Already a User? <a data-dismiss="modal" data-toggle="modal" href="#login" >Login</a> here now!</h4>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -661,7 +670,64 @@ if (isset($_SESSION['logged_user'])) {
                 <div class="form-bottom">
                     <div style="color: #fff">
                         <h4>Welcome to Roboniche ! You have signed up successfully!</h4>
-                        <h4>Please <a href="#login">login here</a> using your credential.</h4>
+                        <!--<h4>Please <a data-dismiss="modal" data-toggle="modal" href="#login">login here</a> using your credential.</h4>-->
+                        <h4>Please contact with your coordinator to activate your profile.</h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bad registration modal -->
+    <div id="bad-reg" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="login-modal" id="sign-conf-modal">
+                <div class="form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>Roboniche.in</h3>
+                        </div>
+                        <div class="form-top-right">
+                            <i class="fa fa-times" data-dismiss="modal"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div style="color: #fff">
+                        <h4 id="line1"></h4>
+                        <h4 id="line2"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- good registration modal -->
+    <div id="good-reg" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="login-modal" id="sign-conf-modal">
+                <div class="form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>Roboniche.in</h3>
+                        </div>
+                        <div class="form-top-right">
+                            <i class="fa fa-times" data-dismiss="modal"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div style="color: #fff">
+                        <h4 id="line1"></h4>
+                        <h4 id="line2"></h4>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Okay</button>
                     </div>
                 </div>
             </div>
@@ -674,6 +740,7 @@ if (isset($_SESSION['logged_user'])) {
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
+
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
@@ -688,7 +755,7 @@ if (isset($_SESSION['logged_user'])) {
     <!-- Login Modal JavaScript -->
     <script src="js/login_modal.js"></script>
     <!-- Calender Modal JavaScript -->
-    <script src="js/simplecalendar.js"></script>
+    <script src="js/simplecalendar.js.php"></script>
 
 </body>
 

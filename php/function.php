@@ -55,13 +55,20 @@ if($req_type=='event_details'){
 
     $event_query = "select * from event_details where event_date='$current_date'";
     $res=mysqli_query($conn,$event_query);
+    $row=mysqli_fetch_assoc($res);
+
+    $event_insti_code = $row['event_insti'];
+    $query = "select * from institution_details where instituition_code='$event_insti_code'";
+    $res_insti=mysqli_query($conn,$query);
+    $event_insti_name = mysqli_fetch_assoc($res_insti)['instituition_name'];
+    $event_code = mysqli_fetch_assoc($res)['event_code'];
 
     $event_array = array();
-    while($row=mysqli_fetch_assoc($res)){
-        $event_array[]=array("event_code" => $row['event_code'],"event_title" => $row['event_title'],"event_date" => $row['event_date'],
-                        "event_desc" => $row['event_desc'],"event_min" => $row['event_min'],"event_max" => $row['event_max'],
-                        "event_insti" => $row['event_insti'],"event_uni_flag" => $row['event_uni_flag']);
-    }
+    $event_array[]=array("event_code" => $row['event_code'],"event_title" => $row['event_title'],"event_date" => $row['event_date'],
+        "event_desc" => $row['event_desc'],"event_min" => $row['event_min'],"event_max" => $row['event_max'],
+        "event_insti_code" => $row['event_insti'],"event_insti_name" => $event_insti_name,"event_insti_flag" => $row['event_uni_flag']);
+
+
 
     echo json_encode($event_array);
 
@@ -82,5 +89,41 @@ if($req_type=='event_date'){
 
     echo json_encode($event_array);
 
+}
+
+if($req_type=='register'){
+
+    $signed_user = $_POST['username'];
+    $login_type = $_POST['login_type'];
+    $event_code = $_POST['event_code'];
+    $check = true;
+
+    $query_check = "select * from registration_details where user_name='$signed_user' and user_type='$login_type' and event_code='$event_code'";
+    $res= mysqli_query($conn,$query_check);
+    if(mysqli_num_rows($res)>0){
+        $check=false;
+        echo ("Sorry! You are already registered!");
+    }
+
+    $query = "insert into registration_details (user_name,user_type,event_code) values ('$signed_user','$login_type','$event_code')";
+
+    $row=0;
+    if ($check && mysqli_query($conn,$query)) {
+        $row = mysqli_affected_rows($conn);
+        if ($row!=1) {
+            $check=false;
+            $err_msg="Some problem occurred!! Please try again";
+            echo ($err_msg);
+        }
+    }
+
+    if($check){
+        mysqli_commit($conn);
+        mysqli_close($conn);
+    }
+    else{
+        mysqli_rollback($conn);
+        mysqli_close($conn);
+    }
 }
 ?>

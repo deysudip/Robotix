@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - robotix@localhost" uuid="445110bc-5446-427a-a0ec-da844fc7dd9b">
+    <data-source name="MySQL - robonich_robotx@localhost" uuid="aba8b8a0-54c0-4680-b1c3-df3aac8d0229">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-pattern>robotix.*</schema-pattern>
-      <default-schemas>robotix.*</default-schemas>
+      <schema-pattern>robonich_robotx.*</schema-pattern>
+      <default-schemas>robonich_robotx.*</default-schemas>
     </data-source>
   </component>
 </project>

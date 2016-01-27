@@ -15,9 +15,15 @@ if ($_POST['login_type']=="user_login"){
         $status=mysqli_fetch_assoc($res)['user_status'];
 
         if ($status==1){
+            $query="select * from user_details where user_name='$user_name'";
+            $res=mysqli_query($conn,$query);
+            $insti_code=mysqli_fetch_assoc($res)['user_instituition_code'];
+
             session_start();
             $_SESSION['logged_user']=$user_name;
             $_SESSION['login_type']=$type;
+            $_SESSION['logged_user_insti']=$insti_code;
+
         }
         elseif($status==0){
             echo "Your profile is not activated yet!!";
@@ -42,12 +48,19 @@ if ($_POST['login_type']=="group_login"){
     $num_rows= mysqli_num_rows($res);
     if ($num_rows==1){
         $row=mysqli_fetch_assoc($res);
-        $status=$row['status'];
+        $status=$row['user_status'];
 
         if ($status==1){
+            $query="select * from group_details WHERE group_user_name='$group_name'";
+            $res=mysqli_query($conn,$query);
+            $insti_code=mysqli_fetch_assoc($res)['group_instituition_code'];
+            $group_strength=mysqli_fetch_assoc($res)['group_instituition_code'];
+
             session_start();
             $_SESSION['logged_user']=$group_name;
             $_SESSION['login_type']=$type;
+            $_SESSION['logged_user_insti']=$insti_code;
+            $_SESSION['group_strength']=$group_strength;
         }
         elseif($status==0){
             echo "Your profile is not activated yet!!";
@@ -75,12 +88,16 @@ if ($_POST['login_type']=="coord_login"){
     $num_rows= mysqli_num_rows($res);
     if ($num_rows==1){
         $row=mysqli_fetch_assoc($res);
-        $status=$row['status'];
+        $status=$row['user_status'];
 
         if ($status==1){
+            $query="select * from coord_details WHERE coord_user_name='$coord_name'";
+            $res=mysqli_query($conn,$query);
+            $insti_code=mysqli_fetch_assoc($res)['coord_instituition_code'];
             session_start();
             $_SESSION['logged_user']=$coord_name;
             $_SESSION['login_type']=$type;
+            $_SESSION['logged_user_insti']=$insti_code;
         }
         elseif($status==0){
             echo "Your profile is not activated yet!!";

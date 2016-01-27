@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 (function($) {
     "use strict"; // Start of use strict
 
@@ -70,12 +64,6 @@
         $(this).find("input:not([readonly]),textarea,select").val('').end();
         $(this).find(".err-msg").css('display', 'none');
     });
-
-    $(".form-bottom a[href='#login']").on('click', function(e){
-        $('#sign-conf').modal('hide');
-        $('#login').modal('show');
-    });
-
 
 
 

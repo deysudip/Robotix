@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb4741bd-dfd7-45c6-9f12-a8f85417b08e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/creative_dashboard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/simple-sidebar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/user_dashboard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/calendar_modal.css" afterPath="$PROJECT_DIR$/css/calendar_modal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/login_modal.css" afterPath="$PROJECT_DIR$/css/login_modal.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/creative.js" afterPath="$PROJECT_DIR$/js/creative.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/login_modal.js" afterPath="$PROJECT_DIR$/js/login_modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/simplecalendar.js" afterPath="$PROJECT_DIR$/js/simplecalendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/conn.php" afterPath="$PROJECT_DIR$/php/conn.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/function.php" afterPath="$PROJECT_DIR$/php/function.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/login.php" afterPath="$PROJECT_DIR$/php/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/signin.php" afterPath="$PROJECT_DIR$/php/signin.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/simplecalendar.js" afterPath="$PROJECT_DIR$/js/simplecalendar.js.php" />
     </list>
     <ignored path="Robotix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +50,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - robotix@localhost" />
+        <option name="myItemId" value="MySQL - robonich_robotx@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -52,11 +60,11 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - robotix@localhost" />
+        <option name="myItemId" value="MySQL - robonich_robotx@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="event_details" />
+        <option name="myItemId" value="user_details" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -67,11 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8545456">
-              <caret line="432" column="45" selection-start-line="432" selection-start-column="45" selection-end-line="432" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.6188406">
+              <caret line="729" column="95" selection-start-line="729" selection-start-column="95" selection-end-line="729" selection-end-column="95" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -81,55 +89,81 @@
                 <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simplecalendar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/simplecalendar.js">
+      <file leaf-file-name="simplecalendar.js.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/simplecalendar.js.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+            <state vertical-scroll-proportion="-16.038462">
+              <caret line="246" column="51" selection-start-line="246" selection-start-column="51" selection-end-line="246" selection-end-column="51" />
               <folding>
                 <element signature="n#!!block;n#GetMonthName#0;n#!!block;n#calender#0" expanded="false" />
                 <element signature="n#!!block;n#setMonth#0;n#!!block;n#calender#0" expanded="false" />
-                <element signature="e#1289#1818#0" expanded="false" />
-                <element signature="e#1900#2428#0" expanded="false" />
+                <element signature="e#1394#2126#0#JavaScript" expanded="false" />
+                <element signature="e#2208#2937#0#JavaScript" expanded="false" />
                 <element signature="n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
-                <element signature="n#!!block;n#getDaysInMonth#0;n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
-                <element signature="n#!!block;n#setDaysInOrder#0;n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
-                <element signature="e#5037#6077#0" expanded="false" />
                 <element signature="n#!!block;n#fetchEventData#0;n#!!block;n#calender#0" expanded="false" />
-                <element signature="e#7666#8914#0" expanded="false" />
-                <element signature="e#8977#9151#0" expanded="false" />
+                <element signature="n#!!block;n#setCurrentDay#0;n#!!block;n#calender#0" expanded="false" />
+                <element signature="e#8175#9423#0#JavaScript" expanded="false" />
+                <element signature="e#9486#9660#0#JavaScript" expanded="false" />
+                <element signature="n#!!block;n#register#0;n#!!block;n#calender#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+              <folding>
+                <element signature="e#33#1153#0#PHP" expanded="false" />
+                <element signature="e#1155#2466#0#PHP" expanded="false" />
+                <element signature="e#2468#3639#0#PHP" expanded="false" />
+                <marker date="1453845476352" expanded="true" signature="175:280" placeholder="select * fro..user_login_info..." />
+                <marker date="1453845476352" expanded="true" signature="485:540" placeholder="select * fro..user_details..." />
+                <marker date="1453845476352" expanded="true" signature="1313:1425" placeholder="select * fro..user_login_info..." />
+                <marker date="1453845476352" expanded="true" signature="1649:1699" placeholder="select * fro..group_details..." />
+                <marker date="1453845476352" expanded="true" signature="1649:1700" placeholder="select * fro..group_details..." />
+                <marker date="1453845476352" expanded="true" signature="1649:1701" placeholder="select * fro..group_details..." />
+                <marker date="1453845476352" expanded="true" signature="1649:1712" placeholder="select * fro..group_details..." />
+                <marker date="1453845476352" expanded="true" signature="1649:1946" placeholder="select * fro..group_details..." />
+                <marker date="1453845476352" expanded="true" signature="2627:2739" placeholder="select * fro..user_login_info..." />
+                <marker date="1453845476352" expanded="true" signature="2963:3026" placeholder="select * fro..coord_details..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3347826">
-              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+            <state vertical-scroll-proportion="-10.307693">
+              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding>
                 <element signature="e#66#468#0#PHP" expanded="false" />
                 <element signature="e#470#974#0#PHP" expanded="false" />
                 <element signature="e#976#1484#0#PHP" expanded="false" />
-                <marker date="1452902718158" expanded="true" signature="190:223" placeholder="select * fro..institution_details..." />
-                <marker date="1452902718158" expanded="true" signature="190:254" placeholder="select * fro..institution_details..." />
-                <marker date="1452902718158" expanded="true" signature="634:734" placeholder="select * fro.._details..." />
-                <marker date="1452902718158" expanded="true" signature="1147:1247" placeholder="select * fro..manager_details..." />
-                <marker date="1452902718158" expanded="true" signature="1743:1777" placeholder="select * fro..event_details..." />
-                <marker date="1452902718158" expanded="true" signature="1743:1789" placeholder="select * fro..event_details..." />
-                <marker date="1452902718158" expanded="true" signature="1743:1803" placeholder="select * fro..event_details..." />
-                <marker date="1452902718158" expanded="true" signature="2477:2610" placeholder="select DATE(..event_details..." />
+                <element signature="e#1486#2652#0#PHP" expanded="false" />
+                <element signature="e#2654#3154#0#PHP" expanded="false" />
+                <marker date="1453852907951" expanded="true" signature="190:254" placeholder="select * fro..institution_details..." />
+                <marker date="1453852907951" expanded="true" signature="634:734" placeholder="select * fro..coord_details..." />
+                <marker date="1453852907951" expanded="true" signature="1147:1247" placeholder="select * fro..manager_details..." />
+                <marker date="1453852907951" expanded="true" signature="1743:1803" placeholder="select * fro..event_details..." />
+                <marker date="1453852907951" expanded="true" signature="1944:2021" placeholder="select * fro..institution_details..." />
+                <marker date="1453852907951" expanded="true" signature="2795:2928" placeholder="select DAY(e..event_details..." />
+                <marker date="1453852907951" expanded="true" signature="3343:3408" placeholder="select * fro..registration_details..." />
+                <marker date="1453852907951" expanded="true" signature="3343:3436" placeholder="select * fro..registration_details..." />
+                <marker date="1453852907951" expanded="true" signature="3343:3465" placeholder="select * fro..registration_details..." />
+                <marker date="1453852907951" expanded="true" signature="3641:3758" placeholder="insert into registration_details..." />
               </folding>
             </state>
           </provider>
@@ -164,21 +198,29 @@
         <option value="$PROJECT_DIR$/../../php/php-5.6.15-Win32-VC11-x64/php.ini" />
         <option value="$PROJECT_DIR$/php/logout.php" />
         <option value="$PROJECT_DIR$/css/form-elements.css" />
-        <option value="C:/xampp/htdocs/Robotix/php/function.php" />
-        <option value="$PROJECT_DIR$/php/login.php" />
-        <option value="$PROJECT_DIR$/css/login_modal.css" />
-        <option value="$PROJECT_DIR$/php/conn.php" />
         <option value="dbtable:/e9bd3e39/445110bc-5446-427a-a0ec-da844fc7dd9b/robotix.group_details" />
         <option value="C:/xampp/htdocs/Robotix/php/signin.php" />
-        <option value="C:/xampp/htdocs/Robotix/index.php" />
-        <option value="$PROJECT_DIR$/js/creative.js" />
-        <option value="$PROJECT_DIR$/php/signin.php" />
-        <option value="$PROJECT_DIR$/js/login_modal.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/445110bc-5446-427a-a0ec-da844fc7dd9b/console.sql" />
-        <option value="$PROJECT_DIR$/js/simplecalendar.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/calendar_modal.css" />
+        <option value="$PROJECT_DIR$/php/conn.php" />
+        <option value="$PROJECT_DIR$/php/signin.php" />
+        <option value="$PROJECT_DIR$/css/login_modal.css" />
+        <option value="$PROJECT_DIR$/js/creative.js" />
+        <option value="$PROJECT_DIR$/css/creative_dashboard.css" />
+        <option value="$PROJECT_DIR$/css/simple-sidebar.css" />
+        <option value="$PROJECT_DIR$/js/simplecalendar.php" />
+        <option value="$PROJECT_DIR$/user_dashboard.php" />
+        <option value="$PROJECT_DIR$/js/simplecalendar.js" />
+        <option value="$PROJECT_DIR$/js/login_modal.js" />
+        <option value="C:/xampp/htdocs/Robotix/index.php" />
+        <option value="$PROJECT_DIR$/php/login.php" />
         <option value="$PROJECT_DIR$/php/function.php" />
+        <option value="C:/xampp/htdocs/Robotix/php/login.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/aba8b8a0-54c0-4680-b1c3-df3aac8d0229/console.sql" />
+        <option value="C:/xampp/htdocs/Robotix/js/simplecalendar.js.php" />
+        <option value="C:/xampp/htdocs/Robotix/php/function.php" />
+        <option value="$PROJECT_DIR$/js/simplecalendar.js.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -205,6 +247,28 @@
     <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>BadExpressionStatementJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -230,6 +294,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -276,52 +341,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Robotix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Robotix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="font-awesome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Robotix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Robotix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Robotix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Robotix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,7 +357,11 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work Station\PhpstormProjects\Robotix\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work Station\PhpstormProjects\Robotix\css" />
       <recent name="D:\Work Station\PhpstormProjects\Robotix\data" />
       <recent name="D:\Work Station\PhpstormProjects\Robotix\js" />
     </key>
@@ -422,15 +448,15 @@
     <editor active="false" />
     <layout>
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28856042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15874036" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3986577" sideWeight="0.5025707" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20179948" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20179948" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261745" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261745" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252688" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248322" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38709676" sideWeight="0.4974293" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -439,9 +465,31 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3986577" sideWeight="0.5025707" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261745" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261745" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248322" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15874036" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20179948" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38709676" sideWeight="0.4974293" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -456,14 +504,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/simplecalendar.js</url>
-          <line>120</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="59" />
+      <option name="time" value="64" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="logout.php">
@@ -475,7 +516,7 @@
         <watch expression="$_SESSION['login_type']" language="PHP" />
       </configuration>
       <configuration name="login.php">
-        <watch expression="$user_name" language="PHP" />
+        <watch expression="$row" />
       </configuration>
       <configuration name="signin.php">
         <watch expression="$values" />
@@ -487,7 +528,10 @@
         <watch expression="$query_coord" />
       </configuration>
       <configuration name="index.php">
-        <watch expression="$values" />
+        <watch expression="$row" />
+      </configuration>
+      <configuration name="simplecalendar.js.php">
+        <watch expression="$row" />
       </configuration>
       <configuration name="JavascriptDebugType">
         <watch expression="monthNumber" />
@@ -498,7 +542,7 @@
         <watch expression="index" />
       </configuration>
       <configuration name="function.php">
-        <watch expression="$values" />
+        <watch expression="$row" />
       </configuration>
       <configuration name="PhpWebAppRunConfigurationType">
         <watch expression="$user_name" language="PHP" />
@@ -507,119 +551,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/creative.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="476" column="0" selection-start-line="476" selection-start-column="0" selection-end-line="476" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/creative.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/creative.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="199" column="18" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/creative.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="199" column="18" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/header.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48110464">
-          <caret line="961" column="35" selection-start-line="961" selection-start-column="25" selection-end-line="961" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Re-usable Assets/bootstrap-login-forms/form-3/assets/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Re-usable Assets/bootstrap-login-forms/form-3/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -702,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/Robotix/php/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/xampp/htdocs/Robotix/php/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.230769">
@@ -734,13 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7316456">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/creative.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33282906">
-          <caret line="49" column="10" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -773,43 +690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/font-awesome/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12171838">
           <caret line="3" column="9" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/login_modal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2952243">
-          <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/conn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34442836">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e9bd3e39/445110bc-5446-427a-a0ec-da844fc7dd9b/robotix.group_details">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -820,125 +704,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/Robotix/php/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.042288557">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp/htdocs/Robotix/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.042288557">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/signin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0">
-          <caret line="287" column="10" selection-start-line="287" selection-start-column="10" selection-end-line="287" selection-end-column="10" />
-          <folding>
-            <element signature="e#56#3153#0#PHP" expanded="false" />
-            <element signature="e#3177#6375#0#PHP" expanded="false" />
-            <marker date="1452889182359" expanded="true" signature="942:997" placeholder="select * fro..user_details..." />
-            <marker date="1452889182359" expanded="true" signature="1276:1333" placeholder="select * fro..user_details..." />
-            <marker date="1452889182359" expanded="true" signature="1591:1652" placeholder="select * fro..user_details..." />
-            <marker date="1452889182359" expanded="true" signature="1597:1652" placeholder="select * fro..user_details..." />
-            <marker date="1452889182359" expanded="true" signature="1912:2191" placeholder="insert into user_details..." />
-            <marker date="1452889182359" expanded="true" signature="2482:2582" placeholder="insert into user_login_info..." />
-            <marker date="1452889182359" expanded="true" signature="4092:4160" placeholder="select * fro..user_details..." />
-            <marker date="1452889182359" expanded="true" signature="4439:4499" placeholder="select * fro..user_details..." />
-            <marker date="1452889182359" expanded="true" signature="4757:4821" placeholder="select * fro..user_details..." />
-            <marker date="1452889182359" expanded="true" signature="5082:5398" placeholder="insert into coord_details..." />
-            <marker date="1452889182359" expanded="true" signature="5082:5401" placeholder="insert into coord_details..." />
-            <marker date="1452889182359" expanded="true" signature="5082:5416" placeholder="insert into coord_details..." />
-            <marker date="1452889182359" expanded="true" signature="5691:5798" placeholder="insert into user_login_info..." />
-            <marker date="1452889182359" expanded="true" signature="9247:9329" placeholder="select group..groep_details..." />
-            <marker date="1452889182359" expanded="true" signature="9666:9691" placeholder="insert into group_details..." />
-            <marker date="1452889182359" expanded="true" signature="9666:9692" placeholder="insert into group_details..." />
-            <marker date="1452889182359" expanded="true" signature="9666:9717" placeholder="insert into group_details..." />
-            <marker date="1452889182359" expanded="true" signature="9666:9718" placeholder="insert into group_details..." />
-            <marker date="1452889182359" expanded="true" signature="9666:9737" placeholder="insert into group_details..." />
-            <marker date="1452889182359" expanded="true" signature="10033:10140" placeholder="insert into user_login_info..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e9bd3e39/445110bc-5446-427a-a0ec-da844fc7dd9b/robotix.user_details">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/creative.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64385474">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e9bd3e39/445110bc-5446-427a-a0ec-da844fc7dd9b/robotix.event_details">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/login_modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="241" column="16" selection-start-line="235" selection-start-column="12" selection-end-line="241" selection-end-column="16" />
-          <folding>
-            <element signature="e#136#388#0" expanded="false" />
-            <element signature="e#442#690#0" expanded="false" />
-            <element signature="e#783#1039#0" expanded="false" />
-            <element signature="e#1183#1511#0" expanded="false" />
-            <element signature="e#1656#1906#0" expanded="false" />
-            <element signature="e#2021#2338#0" expanded="false" />
-            <element signature="e#2408#4014#0" expanded="false" />
-            <element signature="e#4088#4527#0" expanded="false" />
-            <element signature="e#4599#4765#0" expanded="false" />
-            <element signature="e#4877#5407#0" expanded="false" />
-            <element signature="e#5520#6066#0" expanded="false" />
-            <element signature="e#6261#6343#0" expanded="false" />
-            <element signature="e#6375#7245#0" expanded="false" />
-            <element signature="e#8615#9822#0" expanded="false" />
-            <element signature="e#9914#11121#0" expanded="false" />
-            <element signature="e#11214#13083#0" expanded="false" />
-            <element signature="e#13183#15798#0" expanded="false" />
-            <element signature="e#15885#19240#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/eventdata.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
           <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/445110bc-5446-427a-a0ec-da844fc7dd9b/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,14 +715,291 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.92435706">
           <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/conn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0984081">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/login_modal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37322834">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="1048" column="49" selection-start-line="1048" selection-start-column="44" selection-end-line="1048" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/creative.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7863129">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/creative.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-32.03846">
+          <caret line="49" column="10" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/avatar.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/creative_dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34492755">
+          <caret line="80" column="37" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Re-usable Assets/NiceAdmin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/simple-sidebar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/445110bc-5446-427a-a0ec-da844fc7dd9b/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/signin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="5" selection-start-line="79" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="260" column="0" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/font-awesome/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.7205439">
+          <caret line="669" column="9" selection-start-line="669" selection-start-column="4" selection-end-line="669" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/font-awesome/less/icons.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.220472">
+          <caret line="178" column="23" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e9bd3e39/aba8b8a0-54c0-4680-b1c3-df3aac8d0229/robonich_robotx.registration_details">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login_modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83519554">
+          <caret line="250" column="50" selection-start-line="250" selection-start-column="32" selection-end-line="250" selection-end-column="50" />
+          <folding>
+            <element signature="e#149#401#0" expanded="false" />
+            <element signature="e#455#703#0" expanded="false" />
+            <element signature="e#796#1052#0" expanded="false" />
+            <element signature="e#1196#1524#0" expanded="false" />
+            <element signature="e#1669#1919#0" expanded="false" />
+            <element signature="e#2034#2351#0" expanded="false" />
+            <element signature="e#2421#4027#0" expanded="false" />
+            <element signature="e#4101#4540#0" expanded="false" />
+            <element signature="e#4890#5420#0" expanded="false" />
+            <element signature="e#5533#6079#0" expanded="false" />
+            <element signature="e#6274#6356#0" expanded="false" />
+            <element signature="e#6388#7258#0" expanded="false" />
+            <element signature="e#8691#9898#0" expanded="false" />
+            <element signature="e#9983#11190#0" expanded="false" />
+            <element signature="e#11276#13169#0" expanded="false" />
+            <element signature="e#13262#15878#0" expanded="false" />
+            <element signature="e#15958#19314#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/Robotix/php/conn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/aba8b8a0-54c0-4680-b1c3-df3aac8d0229/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e9bd3e39/aba8b8a0-54c0-4680-b1c3-df3aac8d0229/robonich_robotx.user_details">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/Robotix/php/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.538462">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <marker date="1453845476352" expanded="true" signature="175:280" placeholder="select * fro..user_login_info..." />
+            <marker date="1453845476352" expanded="true" signature="485:540" placeholder="select * fro..user_details..." />
+            <marker date="1453845476352" expanded="true" signature="1313:1425" placeholder="select * fro..user_login_info..." />
+            <marker date="1453845476352" expanded="true" signature="1649:1712" placeholder="select * fro..group_details..." />
+            <marker date="1453845476352" expanded="true" signature="2627:2739" placeholder="select * fro..user_login_info..." />
+            <marker date="1453845476352" expanded="true" signature="2963:3026" placeholder="select * fro..coord_details..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/Robotix/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1538463">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/Robotix/js/simplecalendar.js.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/Robotix/php/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <marker date="1453852907951" expanded="true" signature="190:254" placeholder="select * fro..institution_details..." />
+            <marker date="1453852907951" expanded="true" signature="634:734" placeholder="select * fro..coord_details..." />
+            <marker date="1453852907951" expanded="true" signature="1147:1247" placeholder="select * fro..manager_details..." />
+            <marker date="1453852907951" expanded="true" signature="1743:1803" placeholder="select * fro..event_details..." />
+            <marker date="1453852907951" expanded="true" signature="1944:2021" placeholder="select * fro..institution_details..." />
+            <marker date="1453852907951" expanded="true" signature="2795:2928" placeholder="select DAY(e..." />
+            <marker date="1453852907951" expanded="true" signature="3343:3465" placeholder="select * fro..registration_details..." />
+            <marker date="1453852907951" expanded="true" signature="3641:3758" placeholder="insert into registration_details..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+          <folding>
+            <element signature="e#33#1153#0#PHP" expanded="false" />
+            <element signature="e#1155#2466#0#PHP" expanded="false" />
+            <element signature="e#2468#3639#0#PHP" expanded="false" />
+            <marker date="1453845476352" expanded="true" signature="175:280" placeholder="select * fro..user_login_info..." />
+            <marker date="1453845476352" expanded="true" signature="485:540" placeholder="select * fro..user_details..." />
+            <marker date="1453845476352" expanded="true" signature="1313:1425" placeholder="select * fro..user_login_info..." />
+            <marker date="1453845476352" expanded="true" signature="1649:1699" placeholder="select * fro..group_details..." />
+            <marker date="1453845476352" expanded="true" signature="1649:1700" placeholder="select * fro..group_details..." />
+            <marker date="1453845476352" expanded="true" signature="1649:1701" placeholder="select * fro..group_details..." />
+            <marker date="1453845476352" expanded="true" signature="1649:1712" placeholder="select * fro..group_details..." />
+            <marker date="1453845476352" expanded="true" signature="1649:1946" placeholder="select * fro..group_details..." />
+            <marker date="1453845476352" expanded="true" signature="2627:2739" placeholder="select * fro..user_login_info..." />
+            <marker date="1453845476352" expanded="true" signature="2963:3026" placeholder="select * fro..coord_details..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.307693">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding>
+            <element signature="e#66#468#0#PHP" expanded="false" />
+            <element signature="e#470#974#0#PHP" expanded="false" />
+            <element signature="e#976#1484#0#PHP" expanded="false" />
+            <element signature="e#1486#2652#0#PHP" expanded="false" />
+            <element signature="e#2654#3154#0#PHP" expanded="false" />
+            <marker date="1453852907951" expanded="true" signature="190:254" placeholder="select * fro..institution_details..." />
+            <marker date="1453852907951" expanded="true" signature="634:734" placeholder="select * fro..coord_details..." />
+            <marker date="1453852907951" expanded="true" signature="1147:1247" placeholder="select * fro..manager_details..." />
+            <marker date="1453852907951" expanded="true" signature="1743:1803" placeholder="select * fro..event_details..." />
+            <marker date="1453852907951" expanded="true" signature="1944:2021" placeholder="select * fro..institution_details..." />
+            <marker date="1453852907951" expanded="true" signature="2795:2928" placeholder="select DAY(e..event_details..." />
+            <marker date="1453852907951" expanded="true" signature="3343:3408" placeholder="select * fro..registration_details..." />
+            <marker date="1453852907951" expanded="true" signature="3343:3436" placeholder="select * fro..registration_details..." />
+            <marker date="1453852907951" expanded="true" signature="3343:3465" placeholder="select * fro..registration_details..." />
+            <marker date="1453852907951" expanded="true" signature="3641:3758" placeholder="insert into registration_details..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/simplecalendar.js.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.038462">
+          <caret line="246" column="51" selection-start-line="246" selection-start-column="51" selection-end-line="246" selection-end-column="51" />
+          <folding>
+            <element signature="n#!!block;n#GetMonthName#0;n#!!block;n#calender#0" expanded="false" />
+            <element signature="n#!!block;n#setMonth#0;n#!!block;n#calender#0" expanded="false" />
+            <element signature="e#1394#2126#0#JavaScript" expanded="false" />
+            <element signature="e#2208#2937#0#JavaScript" expanded="false" />
+            <element signature="n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
+            <element signature="n#!!block;n#fetchEventData#0;n#!!block;n#calender#0" expanded="false" />
+            <element signature="n#!!block;n#setCurrentDay#0;n#!!block;n#calender#0" expanded="false" />
+            <element signature="e#8175#9423#0#JavaScript" expanded="false" />
+            <element signature="e#9486#9660#0#JavaScript" expanded="false" />
+            <element signature="n#!!block;n#register#0;n#!!block;n#calender#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8545456">
-          <caret line="432" column="45" selection-start-line="432" selection-start-column="45" selection-end-line="432" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.6188406">
+          <caret line="729" column="95" selection-start-line="729" selection-start-column="95" selection-end-line="729" selection-end-column="95" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -963,51 +1009,10 @@
             <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/simplecalendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#GetMonthName#0;n#!!block;n#calender#0" expanded="false" />
-            <element signature="n#!!block;n#setMonth#0;n#!!block;n#calender#0" expanded="false" />
-            <element signature="e#1289#1818#0" expanded="false" />
-            <element signature="e#1900#2428#0" expanded="false" />
-            <element signature="n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
-            <element signature="n#!!block;n#getDaysInMonth#0;n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
-            <element signature="n#!!block;n#setDaysInOrder#0;n#!!block;n#printDateNumber#0;n#!!block;n#calender#0" expanded="false" />
-            <element signature="e#5037#6077#0" expanded="false" />
-            <element signature="n#!!block;n#fetchEventData#0;n#!!block;n#calender#0" expanded="false" />
-            <element signature="e#7666#8914#0" expanded="false" />
-            <element signature="e#8977#9151#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3347826">
-          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-          <folding>
-            <element signature="e#66#468#0#PHP" expanded="false" />
-            <element signature="e#470#974#0#PHP" expanded="false" />
-            <element signature="e#976#1484#0#PHP" expanded="false" />
-            <marker date="1452902718158" expanded="true" signature="190:223" placeholder="select * fro..institution_details..." />
-            <marker date="1452902718158" expanded="true" signature="190:254" placeholder="select * fro..institution_details..." />
-            <marker date="1452902718158" expanded="true" signature="634:734" placeholder="select * fro.._details..." />
-            <marker date="1452902718158" expanded="true" signature="1147:1247" placeholder="select * fro..manager_details..." />
-            <marker date="1452902718158" expanded="true" signature="1743:1777" placeholder="select * fro..event_details..." />
-            <marker date="1452902718158" expanded="true" signature="1743:1789" placeholder="select * fro..event_details..." />
-            <marker date="1452902718158" expanded="true" signature="1743:1803" placeholder="select * fro..event_details..." />
-            <marker date="1452902718158" expanded="true" signature="2477:2610" placeholder="select DATE(..event_details..." />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

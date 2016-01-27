@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3048733780">
-    <data-source source="LOCAL" name="MySQL - robotix@localhost" uuid="445110bc-5446-427a-a0ec-da844fc7dd9b">
+  <component name="DataSourceManagerImpl" format="xml" hash="2341276282">
+    <data-source source="LOCAL" name="MySQL - robonich_robotx@localhost" uuid="aba8b8a0-54c0-4680-b1c3-df3aac8d0229">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/robotix</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/robonich_robotx</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
