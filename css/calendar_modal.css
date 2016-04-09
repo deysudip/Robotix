@@ -7,12 +7,17 @@
     color: #0e171c;
     margin: 0;
 }
+.calendar-footer {
+    background: #f91a0a;
+    color: #0e171c;
+    margin: 0;
+}
 #event-cal-modal table {
     border-spacing: 0;
     width: 100%;
 }
 
-#event-cal-modal span {
+#event-cal-modal span#reg-btn {
     background-color:#373740;
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
@@ -35,7 +40,7 @@
     transition:background-color 150ms ease-in;
 }
 
-#event-cal-modal span:hover {
+#event-cal-modal span#reg-btn:hover {
     background-color:#f05f40;
 }
 
@@ -231,6 +236,7 @@ input[type=checkbox] {display:none;}
 .print-btn {
     padding: 1px 14px 5px 14px;
 }
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen

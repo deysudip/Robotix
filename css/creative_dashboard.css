@@ -193,7 +193,7 @@ header {
 header .header-content {
     position: relative;
     width: 100%;
-    padding: 100px 15px;
+    padding: 5px 15px;
     text-align: center;
 }
 
@@ -222,8 +222,8 @@ header .header-content .header-content-inner p {
 
     header .header-content {
         position: absolute;
-        top: 50%;
-        padding: 0 50px;
+        top: 25%;
+        padding: 0 5px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
@@ -248,13 +248,13 @@ header .header-content .header-content-inner p {
 }
 
 .service-box {
-    margin: 50px auto 0;
+    margin: 20px auto 0;
     max-width: 400px;
 }
 
 @media(min-width:992px) {
     .service-box {
-        margin: 20px auto 0;
+        margin: 20px -10px 0;
     }
 }
 

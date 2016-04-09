@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +20,8 @@
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">-->
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
@@ -76,11 +80,11 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
 <?php
-$_SESSION['logged_user']='Sudip';
+
 if (!isset($_SESSION['logged_user'])){
 ?>
                     <li>
-                        <a data-toggle="modal" href="#login">Log In</a>
+                        <a href="#login" data-toggle="modal">Log In</a>
                     </li>
 <?php
 }
@@ -91,9 +95,9 @@ if (isset($_SESSION['logged_user'])) {
                         <a class="page-scroll dropdown-toggle " data-toggle="dropdown" href="#"><?php echo($_SESSION['logged_user'])?>
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Submenu 1-1</a></li>
-                            <li><a href="#">Submenu 1-2</a></li>
-                            <li><a href="#">Logout</a></li>
+                            <li><a href="user_dashboard.php">Dashboard</a></li>
+                            <!--<li><a href="#">Submenu 1-2</a></li>-->
+                            <li><a href="php/logout.php">Logout</a></li>
                         </ul>
                     </li>
 
@@ -113,9 +117,9 @@ if (isset($_SESSION['logged_user'])) {
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>WELCOME TO ROBONICHE</h1>
+                <h2>Will robots inherit the <i class="fa fa-var-globe fa-3x wow bounceIn" data-wow-delay=".1s"></i>earth?</h2> Yes, but they will be our children.
                 <hr>
-                <p>Your one step solution to all ROBOTICS Workshop!</p>
+                <p><h1>WELCOME TO ROBONICHE</h1>Keep Calm and build robots Your one step solution to all ROBOTICS Workshop!</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
@@ -125,9 +129,9 @@ if (isset($_SESSION['logged_user'])) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
+                    <h2 class="section-heading"> We've got what you need!</h2>
                     <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                    <p class="text-faded">Hello there! It seems you are not entirely sure about "WHAT" "WHY" "HOW" of ROBOTICS</p>
                     <a class="btn btn-default btn-xl" data-toggle="modal" href="#sign">Get Started!</a>
                 </div>
             </div>
@@ -297,7 +301,8 @@ if (isset($_SESSION['logged_user'])) {
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:info@roboniche.in">info@roboniche.in </a> / <a href="mailto:support@roboniche.in">support@roboniche.in</a></p>
+
                 </div>
             </div>
         </div>
@@ -337,20 +342,27 @@ if (isset($_SESSION['logged_user'])) {
 
                 </div>
                 <div class="form-bottom user-login">
-                    <form role="form" action="php/login.php" method="post" class="login-form">
+                    <form role="form" action="" method="post"  class="login-form">
+                        <div class="alert alert-danger err-msg">
+
+                        </div>
                         <div class="form-group">
                             <label class="sr-only" for="username">Username</label>
                             <input type="text" name="username" placeholder="Username..." class="form-username form-control" id="username">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="password">Password</label>
-                            <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="password">
+                            <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="password" >
                         </div>
-                        <button type="submit" class="btn" name="user-login">Sign in!</button>
+
+                        <button class="btn" name="user-login-btn">Sign in!</button>
                     </form>
                 </div>
                 <div class="form-bottom group-login">
-                    <form role="form" action="#" method="post" class="login-form">
+                    <form role="form" action="" method="post" class="login-form">
+                        <div class="alert alert-danger err-msg">
+
+                        </div>
                         <div class="form-group">
                             <label class="sr-only" for="group-name">Groupname</label>
                             <input type="text" name="group-name" placeholder="Group Username..." class="form-username form-control" id="group-name">
@@ -359,21 +371,27 @@ if (isset($_SESSION['logged_user'])) {
                             <label class="sr-only" for="group-password">Password</label>
                             <input type="password" name="group-password" placeholder="Group Password..." class="form-password form-control" id="group-password">
                         </div>
-                        <button type="submit" class="btn" name="group-login">Sign in!</button>
+                        <button class="btn" name="group-login-btn">Sign in!</button>
                     </form>
                 </div>
                 <div class="form-bottom coord-login">
                     <form role="form" action="#" method="post" class="login-form">
+                        <div class="alert alert-danger err-msg">
+
+                        </div>
                         <div class="form-group">
                             <label class="sr-only" for="coord-name">Groupname</label>
                             <input type="text" name="coord-name" placeholder="Coordinator Username..." class="form-username form-control" id="coord-name">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="coord-password">Password</label>
-                            <input type="password" name="coord-password" placeholder="Coordinator Password..." class="form-password form-control" id="Coord-password">
+                            <input type="password" name="coord-password" placeholder="Coordinator Password..." class="form-password form-control" id="coord-password">
                         </div>
-                        <button type="submit" class="btn" name="coord-login">Sign in!</button>
+                        <button class="btn" name="coord-login-btn">Sign in!</button>
                     </form>
+                </div>
+                <div class="form-middle">
+                    <h4>New User? <a data-dismiss="modal" data-toggle="modal" href="#sign" >Sign Up</a> here now!</h4>
                 </div>
             </div>
 
@@ -408,15 +426,24 @@ if (isset($_SESSION['logged_user'])) {
                 <div class="list-event">
                     <div class="day-event">
                         <a href="#" class="close fontawesome-remove" data-dismiss="modal"></a>
-                        <h2 class="title">Lorem ipsum 1</h2>
-                        <p class="date"><b>2014-12-16</b></p>
-                        <p class="details">Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                        <h2 class="title" id="event_title"><span>Lorem ipsum 1</span></h2>
+                        <p class="date" id="event_date"><b><span>2014-12-16</span></b></p>
+                        <p class="details" id="event_details"><span>Lorem Ipsum</span> </p>
+                        <p class="details" id="event_insti_name"><b>Venue:</b> <span></span></p>
+                        <p class="details" id="event_min"><b>Min No of Participant:</b> <span></span></p>
+                        <p class="details" id="event_max"><b>Max No of Participant:</b> <span></span></p>
+                        <p class="details" id="event_type"><b>Type:</b> <span></span></p>
+                        <p class="details" id="event_insti_code" hidden><b>Instituition Code:</b> <span></span></p>
+                        <p class="details" id="event_insti_flag" hidden><b>Instituition Flag:</b> <span></span></p>
                         <label class="sign-up">
-                            <span>Sign Up for this Event!</span>
+                            <span id="reg-btn">Register for this Event!</span>
                         </label>
                     </div>
                 </div>
             </div>
+            <!--<div class="calender-footer">
+                sfdagdsgsh
+            </div>-->
          </div>
     </div>
 
@@ -451,10 +478,18 @@ if (isset($_SESSION['logged_user'])) {
                             </li>
                         </ul>
                     </div>
-
                 </div>
+
+                <!-- User sign up form -->
                 <div class="form-bottom user-sign">
-                    <form role="form" action="php/signin.php" method="post" class="login-form">
+                    <form role="form" action="#" method="post" class="login-form">
+                        <div class="alert alert-danger err-msg">
+
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="userfullname-sign">User Full Name</label>
+                            <input type="text" name="userfullname-sign" placeholder="User Full Name..." class="form-username form-control" id="userfullname-sign">
+                        </div>
                         <div class="form-group">
                             <label class="sr-only" for="username-sign">Username</label>
                             <input type="text" name="username-sign" placeholder="Username..." class="form-username form-control" id="username-sign">
@@ -464,30 +499,35 @@ if (isset($_SESSION['logged_user'])) {
                             <input type="password" name="password-sign" placeholder="Password..." class="form-password form-control" id="password-sign">
                         </div>
                         <div class="form-group">
-                            <label class="sr-only" for="password-sign-conf"> Confirm Password</label>
-                            <input type="password" name="password-sign-conf" placeholder="Confirm Password..." class="form-password form-control" id="password-sign-conf">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="insti-sign">Instituition Name</label>
-                            <input type="text" name="insti-sign" placeholder="Instituition Name..." class="form-username form-control" id="insti-sign">
-                        </div>
-                        <div class="form-group">
                             <label class="sr-only" for="email-sign">Email Id</label>
                             <input type="email" name="email-sign" placeholder="Email Id..." class="form-username form-control" id="email-sign">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="contact-sign">Contact</label>
                             <input type="text" name="contact-sign" placeholder="Contact..." class="form-username form-control" id="contact-sign"
-                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
                         </div>
-                        <button type="submit" class="btn" name="user-sign">Sign Up!</button>
+                        <div class="form-group">
+                            <label class="sr-only" for="insti-sign">Instituition Name</label>
+                            <select name="insti-sign"  class="form-username form-control insti-drop" id="insti-sign">
+                                <option disabled selected value="">Select Your Instituition..</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="insti-coord-sign">Coordinator Name</label>
+                            <select name="insti-coord-sign"  class="form-username form-control coord-drop" id="insti-coord-sign">
+                                <option disabled selected value="">Select Your Coordinator..</option>
+                            </select>
+                        </div>
+                        <button class="btn" name="user-sign-btn" >Sign Up!</button>
                     </form>
                 </div>
+
+                <!-- Group sign up form -->
                 <div class="form-bottom group-sign">
-                    <form role="form" action="#" method="post" class="login-form">
-                        <div class="form-group">
-                            <label class="sr-only" for="group-event-sign">Event Id</label>
-                            <input type="text" name="group-event-sign" placeholder="Event Id..." class="form-username form-control" id="group-event-sign">
+                    <form role="form" action="#" method="post" class="login-form" id="group-sign">
+                        <div class="alert alert-danger err-msg">
+
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="group-username-sign">Group Username</label>
@@ -498,85 +538,79 @@ if (isset($_SESSION['logged_user'])) {
                             <input type="password" name="group-password-sign" placeholder="Group Password..." class="form-password form-control" id="group-password-sign">
                         </div>
                         <div class="form-group">
-                            <label class="sr-only" for="group-password-sign-conf"> Confirm Group Password</label>
-                            <input type="password" name="group-password-sign-conf" placeholder="Confirm Group Password..." class="form-password form-control" id="group-password-sign-conf">
+                            <label class="sr-only" for="group-insti-sign">Instituition Name</label>
+                            <select name="group-insti-sign"  class="form-username form-control insti-drop" id="group-insti-sign">
+                                <option disabled selected value="">Select Your Instituition..</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label class="sr-only" for="group-insti-sign">Instituition Name</label>
-                            <input type="text" name="group-insti-sign" placeholder="Instituition Name..." class="form-username form-control" id="group-insti-sign">
+                            <label class="sr-only" for="group-insti-coord-sign">Coordinator Name</label>
+                            <select name="group-insti-coord-sign"  class="form-username form-control coord-drop" id="group-insti-coord-sign">
+                                <option disabled selected value="">Select Your Coordinator..</option>
+                            </select>
                         </div>
                         <div class="form-group member-nav">
                             <header>
-                                <h2 member="First">First Member</h2>
-                                <a class="btn-prev-mem fontawesome-angle-left" href="#"></a>
-                                <a class="btn-next-mem fontawesome-angle-right" href="#"></a>
+                               <a class="btn-prev-mem fontawesome-angle-left" href="#"></a>
+                               <h2 member="1">First Member</h2>
+                               <a class="btn-next-mem fontawesome-angle-right" href="#"></a>
                             </header>
                         </div>
-                        <div class="form-group-sub select-mem" id="First">
-                            <div class="form-group">
-                                <label class="sr-only" for="first-mem-name">First member name</label>
-                                <input type="text" name="first-mem-name" placeholder="First Member name..." class="form-username form-control" id="first-mem-name">
+                        <div class="form-group">
+                            <input type="text" name="group-mem-count" id="group-mem-count" value="2" readonly hidden>
+                        </div>
+                        <div class="member-details">
+                            <div class="form-group-sub select-mem" id="First" member="1">
+                                <div class="form-group">
+                                    <label class="sr-only" for="First-mem-name">First member name</label>
+                                    <input type="text" name="First-mem-name" placeholder="First Member name..." class="form-username form-control" id="First-mem-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="First-mem-email">First member Email Id</label>
+                                    <input type="email" name="First-mem-email" placeholder="First Member Email Id..." class="form-email form-control" id="First-mem-email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="First-mem-contact">First Member Contact</label>
+                                    <input type="text" name="First-mem-contact" placeholder="First Member Contact..." class="form-number form-control" id="First-mem-contact"
+                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="first-mem-email">First member Email Id</label>
-                                <input type="email" name="first-mem-email" placeholder="First Member Email Id..." class="form-email form-control" id="first-mem-email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="first-mem-contact">First Member Contact</label>
-                                <input type="text" name="first-mem-contact" placeholder="First Member Contact..." class="form-number form-control" id="first-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                            <div class="form-group-sub" id="Second" member="2">
+                                <div class="form-group">
+                                    <label class="sr-only" for="Second-mem-name">Second member name</label>
+                                    <input type="text" name="Second-mem-name" placeholder="Second Member name..." class="form-username form-control" id="Second-mem-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="Second-mem-email">Second member Email Id</label>
+                                    <input type="email" name="Second-mem-email" placeholder="Second Member Email Id..." class="form-email form-control" id="Second-mem-email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="Second-mem-contact">Second Member Contact</label>
+                                    <input type="text" name="Second-mem-contact" placeholder="Second Member Contact..." class="form-number form-control" id="Second-mem-contact"
+                                           onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group-sub" id="Second">
-                            <div class="form-group">
-                                <label class="sr-only" for="second-mem-name">Second member name</label>
-                                <input type="text" name="second-mem-name" placeholder="Second Member name..." class="form-username form-control" id="second-mem-name">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="second-mem-email">Second member Email Id</label>
-                                <input type="email" name="second-mem-email" placeholder="Second Member Email Id..." class="form-email form-control" id="second-mem-email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="second-mem-contact">Second Member Contact</label>
-                                <input type="text" name="second-mem-contact" placeholder="Second Member Contact..." class="form-number form-control" id="second-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-                            </div>
+                        <div class="form-group member-add">
+                            <header>
+                               <a class="btn-plus-mem fa fa-plus-circle" href="#" title="Add new member"></a>
+                                <a class="btn-minus-mem fa fa-minus-circle" href="#" title="Delete last member"></a>
+                            </header>
                         </div>
-                        <div class="form-group-sub" id="Third">
-                            <div class="form-group">
-                                <label class="sr-only" for="third-mem-name">Third member name</label>
-                                <input type="text" name="third-mem-name" placeholder="Third Member name..." class="form-username form-control" id="third-mem-name">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="third-mem-email">Third member Email Id</label>
-                                <input type="email" name="third-mem-email" placeholder="Third Member Email Id..." class="form-email form-control" id="third-mem-email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="third-mem-contact">Third Member Contact</label>
-                                <input type="text" name="third-mem-contact" placeholder="Third Member Contact..." class="form-number form-control" id="third-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-                            </div>
-                        </div>
-                        <div class="form-group-sub" id="Fourth">
-                            <div class="form-group">
-                                <label class="sr-only" for="fourth-mem-name">Fourth member name</label>
-                                <input type="text" name="fourth-mem-name" placeholder="Fourth Member name..." class="form-username form-control" id="fourth-mem-name">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="fourth-mem-email">Fourth member Email Id</label>
-                                <input type="email" name="fourth-mem-email" placeholder="Fourth Member Email Id..." class="form-email form-control" id="fourth-mem-email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="fourth-mem-contact">Fourth Member Contact</label>
-                                <input type="text" name="fourth-mem-contact" placeholder="Fourth Member Contact..." class="form-number form-control" id="fourth-mem-contact"
-                                       onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn" name="group-sign">SIGN UP AS A TEAM!</button>
+                        <button form="group-sign" class="btn" name="group-sign-btn">SIGN UP AS A TEAM!</button>
                     </form>
                 </div>
+
+                <!-- Coord sign up form -->
                 <div class="form-bottom coord-sign">
                     <form role="form" action="#" method="post" class="login-form">
+                        <div class="alert alert-danger err-msg">
+
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="coord-fullname-sign">Username</label>
+                            <input type="text" name="coord-fullname-sign" placeholder="User Full Name..." class="form-username form-control" id="coord-fullname-sign">
+                        </div>
                         <div class="form-group">
                             <label class="sr-only" for="coord-username-sign">Coordinator Username</label>
                             <input type="text" name="coord-username-sign" placeholder="Coordinator Username..." class="form-username form-control" id="coord-username-sign">
@@ -586,30 +620,127 @@ if (isset($_SESSION['logged_user'])) {
                             <input type="password" name="coord-password-sign" placeholder="Coordinator Password..." class="form-password form-control" id="coord-password-sign">
                         </div>
                         <div class="form-group">
-                            <label class="sr-only" for="coord-password-sign-conf">Confirm Coordinator Password</label>
-                            <input type="password" name="coord-password-sign-conf" placeholder="Confirm Coordinator Password..." class="form-password form-control" id="coord-password-sign-conf">
-                        </div>
-                        <div class="form-group">
                             <label class="sr-only" for="coord-email-sign">Coordinator Email Id</label>
                             <input type="email" name="coord-email-sign" placeholder="Coordinator Email Id..." class="form-email form-control" id="coord-email-sign">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="coord-contact-sign">Coordinator Contact</label>
                             <input type="text" name="coord-contact-sign" placeholder="Coordinator Contact..." class="form-number form-control" id="coord-contact-sign"
-                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
                         </div>
-                        <button type="submit" class="btn" name="coord-sign">SIGN UP AS A COORDINATOR !</button>
+                        <div class="form-group">
+                            <label class="sr-only" for="coord-insti-sign">Instituition Name</label>
+                            <select name="coord-insti-sign"  class="form-username form-control insti-drop" id="coord-insti-sign">
+                                <option disabled selected value="">Select Your Instituition..</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="coord-mng-sign">Relationship Manager Name</label>
+                            <select name="coord-mng-sign"  class="form-username form-control mng-drop" id="coord-mng-sign">
+                                <option disabled selected value="">Select Your Relationship Manager..</option>
+                            </select>
+                        </div>
+                        <button class="btn" name="coord-sign-btn">SIGN UP AS A COORDINATOR!</button>
                     </form>
                 </div>
-            </div>
 
+                <div class="form-middle">
+                    <h4>Already a User? <a data-dismiss="modal" data-toggle="modal" href="#login" >Login</a> here now!</h4>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- sign up confirmation modal -->
+    <div id="sign-conf" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="login-modal" id="sign-conf-modal">
+                <div class="form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>Roboniche.in</h3>
+                        </div>
+                        <div class="form-top-right">
+                            <i class="fa fa-times" data-dismiss="modal"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div style="color: #fff">
+                        <h4>Welcome to Roboniche ! You have signed up successfully!</h4>
+                        <!--<h4>Please <a data-dismiss="modal" data-toggle="modal" href="#login">login here</a> using your credential.</h4>-->
+                        <h4>Please contact with your coordinator to activate your profile.</h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bad registration modal -->
+    <div id="bad-reg" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="login-modal" id="sign-conf-modal">
+                <div class="form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>Roboniche.in</h3>
+                        </div>
+                        <div class="form-top-right">
+                            <i class="fa fa-times" data-dismiss="modal"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div style="color: #fff">
+                        <h4 id="line1"></h4>
+                        <h4 id="line2"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- good registration modal -->
+    <div id="good-reg" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="login-modal" id="sign-conf-modal">
+                <div class="form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>Roboniche.in</h3>
+                        </div>
+                        <div class="form-top-right">
+                            <i class="fa fa-times" data-dismiss="modal"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div style="color: #fff">
+                        <h4 id="line1"></h4>
+                        <h4 id="line2"></h4>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Okay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- jQuery -->
+
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
+
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
@@ -624,7 +755,7 @@ if (isset($_SESSION['logged_user'])) {
     <!-- Login Modal JavaScript -->
     <script src="js/login_modal.js"></script>
     <!-- Calender Modal JavaScript -->
-    <script src="js/simplecalendar.js"></script>
+    <script src="js/simplecalendar.js.php"></script>
 
 </body>
 

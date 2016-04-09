@@ -5,6 +5,11 @@
       <BehatSettings behat_path="$PROJECT_DIR$" />
     </behat_settings>
   </component>
+  <component name="PhpProjectServersManager">
+    <servers>
+      <server host="localhost" id="4c69c062-4d4a-4a82-ac62-55f09ba62a46" name="apache" />
+    </servers>
+  </component>
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings />
